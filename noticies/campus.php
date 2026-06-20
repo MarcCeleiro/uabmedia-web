@@ -178,10 +178,7 @@ $data = json_decode($response);
 					$data_uab = json_decode($response_uab);
 					?>
 					<div>
-<br />
-
-
-						<div data-aos="zoom-in" class="row">
+<div data-aos="zoom-in" class="row">
 
 
 							<?php

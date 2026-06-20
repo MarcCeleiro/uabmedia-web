@@ -220,8 +220,7 @@ $data = json_decode($response);
 					$data_politica = json_decode($response_politica);
 					?>
 					<div>
-<br/>
-						<div data-aos="zoom-in" class="row">
+<div data-aos="zoom-in" class="row">
 
 
 							<?php

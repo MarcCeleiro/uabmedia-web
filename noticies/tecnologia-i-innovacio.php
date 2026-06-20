@@ -176,10 +176,7 @@ $data = json_decode($response);
 					$data_tecnologia = json_decode($response_tecnologia);
 					?>
 					<div>
-<br />
-
-
-						<div data-aos="zoom-in" class="row">
+<div data-aos="zoom-in" class="row">
 
 
 							<?php

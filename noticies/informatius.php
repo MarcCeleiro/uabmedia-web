@@ -173,10 +173,7 @@ $data = json_decode($response);
 					$data_informatius = json_decode($response_informatius);
 					?>
 					<div>
-<br />
-
-
-						<div data-aos="zoom-in" class="row">
+<div data-aos="zoom-in" class="row">
 
 
 							<?php

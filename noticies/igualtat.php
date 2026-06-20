@@ -177,10 +177,7 @@ $data = json_decode($response);
 					$data_igualtat = json_decode($response_igualtat);
 					?>
 					<div>
-<br />
-
-
-						<div data-aos="zoom-in" class="row">
+<div data-aos="zoom-in" class="row">
 
 
 							<?php
