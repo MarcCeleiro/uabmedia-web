@@ -14,7 +14,7 @@
 		<?php
 		include './plantilla/header.php';
 		?>
-		<div class="container" style="padding-top:100px">
+		<div class="container" style="padding-top:40px">
 			<h1 class="titol-pagina">Política de galetes</h1>
 			<p>A UABm&egrave;dia, fem &uacute;s de galetes per millorar l&#39;experi&egrave;ncia dels usuaris en la nostra p&agrave;gina web. Les galetes s&oacute;n petits arxius de text que s&#39;emmagatzemen en el teu dispositiu quan visites llocs web. Utilitzem aquestes galetes per diverses finalitats, com ara analitzar el nostre tr&agrave;nsit web, personalitzar continguts i anuncis, i proporcionar funcionalitats de xarxes socials.</p>
 

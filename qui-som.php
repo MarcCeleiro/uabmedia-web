@@ -37,7 +37,7 @@
 
 
 
-		<div class="container" style="padding-top:100px">
+		<div class="container" style="padding-top:40px">
 			<div class="row contacte text-center">
 				<div class="col-md-4">
 					<div class="caixa-icona">
