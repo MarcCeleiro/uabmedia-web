@@ -6,6 +6,9 @@ $GET_VARS2 = array(
 );
 $REQUEST_URL = $API_URL."?".http_build_query($GET_VARS)."&".http_build_query($GET_VARS2);
 
+// "do=get" identifies the item via the query string (iq); no POST body needed.
+$POST_VARS = array();
+
 $ch = curl_init();
 curl_setopt($ch, CURLOPT_URL, $REQUEST_URL);
 curl_setopt($ch, CURLOPT_POST, true);
@@ -217,8 +220,6 @@ $data = json_decode($response);
 		include './plantilla/footer.php';
 		?>
 		<script src="/assets/js/search.js"></script>
-		<script src="/assets/js/popper.min.js"></script>
-		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
 		<script>
 			$(document).ready(function() {

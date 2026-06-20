@@ -1,6 +1,10 @@
 <?php
 include 'config.php';
 
+// "do=get" requests identify the item via the query string (iq); no POST body
+// is needed. Defined in global scope so replaceStaffEmbeddedVideos() can reuse it.
+$POST_VARS = array();
+
 // Funció per reemplaçar vídeos incrustats de staff.uab.media amb JW Player
 function replaceStaffEmbeddedVideos($content) {
 	// Patró per coincidir amb iframes incrustats de staff.uab.media
@@ -28,7 +32,6 @@ function replaceStaffEmbeddedVideos($content) {
 		curl_setopt($ch_video, CURLOPT_POSTFIELDS, $POST_VARS);
 		
 		$response_video = curl_exec($ch_video);
-		curl_close($ch_video);
 		
 		$videoData = json_decode($response_video);
 		
@@ -301,8 +304,6 @@ $data = json_decode($response);
 		include './plantilla/footer.php';
 		?>
 		<script src="/assets/js/search.js"></script>
-		<script src="/assets/js/popper.min.js"></script>
-		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
 		<script>
 			$(document).ready(function() {
