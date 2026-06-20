@@ -144,7 +144,7 @@ $data = json_decode($response);
 					<div>
 						<h1 class="trending-text mt-0" style="font-size: 2rem">Programes ARU</h1>
 						<a href="https://uab.media/uabradio" style="text-decoration: none;">
-							<i class="ri-calendar-event-fill" style="font-size: 2em;"></i> 
+							<i class="fa fa-calendar" style="font-size: 2em;"></i> 
 						</a>
 						<span>Els informatius i els programes de l'Associació de Ràdios Universitàries a UABmèdia</span>
 					</div>

@@ -117,14 +117,14 @@
 						</a>
 					</div>
 					<div id="ctn-icon-search" class="nav-item nav-icon">
-						<i class="search-link ri-search-line" id="icon-search"></i>
+						<i class="search-link fa fa-search" id="icon-search"></i>
 					</div>
 					
 					<div id="box-search" class="d-search">
 						<form action="https://uab.media/cerca" method="post" class="searchbox">
 							<div id="ctn-bars-search" class="form-group position-relative">
 								<input id="inputSearch" type="text" name="cerca" class="text search-input font-size-12" placeholder="Cercar un programa, capítol o notícia">
-								<button id="send_search"type="submit"><i class="search-link ri-search-line"></i></button>
+								<button id="send_search"type="submit"><i class="search-link fa fa-search"></i></button>
 							</div>
 						</form>
 					</div>

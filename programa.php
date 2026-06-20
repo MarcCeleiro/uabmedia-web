@@ -139,7 +139,7 @@ $data_clips = json_decode($response_clips);
 				<div>
 					<h1 class="trending-text mt-0" style="font-size: 2rem"><?php echo htmlspecialchars(trim($data_PROG_id->data->title)); ?></h1>
 					<a href="https://uab.media/uabradio" style="text-decoration: none;">
-						<i class="ri-calendar-event-fill" style="font-size: 2em;"></i>
+						<i class="fa fa-calendar" style="font-size: 2em;"></i>
 					</a>
 					<span><?php echo htmlspecialchars(trim($data_PROG_id->data->description_seo)); ?></span>
 				</div>

@@ -130,8 +130,6 @@
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" defer></script>
 <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.min.js" defer></script>
-<script src="/assets/js/slick.min.js" defer></script>
-<script src="/assets/js/slick-animation.min.js" defer></script>
 <script src="/assets/js/custom.js" defer></script>
 
 <script type="text/javascript" src="https://www.termsfeed.com/public/cookie-consent/4.1.0/cookie-consent.js" charset="UTF-8"></script>
