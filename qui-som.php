@@ -139,9 +139,9 @@
 				<div class="col-12 col-md-4">
 
 					<h2 class="titol-seccio h3">Temporada 25-26</h2>
-                    <h3 class="titol-seccio h4">Equip Redacció Integrada</h3><br/>
-                    <img src="https://uab.media/assets/images/Foto.Becaris26.png" alt="Estudiants en pràctiques 24-25" width="374,75" height="281">
-					<h3 class="h4">Estudiants en pràctiques</h3>
+                    <h3>Equip Redacció Integrada</h3>
+                    <img src="https://uab.media/assets/images/Foto.Becaris26.png" alt="Equip de redacció integrada d'UABmèdia, temporada 25-26" style="width:100%; height:auto; border-radius:var(--um-radius, 12px); margin:14px 0 20px;">
+					<h4>Estudiants en pràctiques</h4>
 					<a href="mailto:Helena.jaraG@autonoma.cat"> Helena Jara </a> <a href="https://www.linkedin.com/in/carla-espinosa-garc%C3%ADa-ba0217282?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank"><i class="fa fa-linkedin social-icon fa-fw"></i><span class="sr-only">Aquest enllaç s'obre en una finestra nova</span></a><br/>
 					<a href="mailto:Aina.GallardoJ@autonoma.cat"> Aina Gallardo </a> <a href="https://www.linkedin.com/in/aina-gallardo-juanola-2466b3389?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><i class="fa fa-linkedin social-icon fa-fw"></i><span class="sr-only">Aquest enllaç s'obre en una finestra nova</span></a><br/>
 					<a href="mailto:Pau.garridoS@autonoma.cat"> Pau Garrido </a><br/>
@@ -153,17 +153,17 @@
 
 					<br/>
 
-                    <h3 class="h4">Direcció</h3>
+                    <h4>Direcció</h4>
 					<p>Ricardo Carniel Bugs <br/><a href="mailto:dg.c.comunicacio@uab.cat " style="font-weight:bold; color:#99BBFF">dg.c.comunicacio@uab.cat </a></p>
 
                     <br/>
 
-					<h3 class="h4">Coordinació</h3>
+					<h4>Coordinació</h4>
 					<p> Luisa Martínez García <br/><a href="mailto:coordinació.uabmedia@uab.cat" style="font-weight:bold; color:#99BBFF">coordinació.uabmedia@uab.cat</a></p>
 
 					<br/>
 					
-					<h3 class="h4">Suport TIC</h3>
+					<h4>Suport TIC</h4>
 					<p>Marc Celeiro<br/><a href="mailto:Marc.Celeiro@uab.cat " style="font-weight:bold; color:#99BBFF">marc.celeiro@uab.cat </a></p>
 
 					<br/>
