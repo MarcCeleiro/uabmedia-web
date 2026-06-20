@@ -6,7 +6,10 @@
         "iq"        => 2
     );
     $REQUEST_URL = $API_URL."?".http_build_query($GET_VARS)."&".http_build_query($GET_VARS2);
-    
+
+    // "do=get" identifies the channel via the query string (iq); no POST body needed.
+    $POST_VARS = array();
+
     $ch = curl_init();
     curl_setopt($ch, CURLOPT_URL, $REQUEST_URL);
     curl_setopt($ch, CURLOPT_POST, true);
@@ -55,7 +58,7 @@
    ?>
     <div class="container" style="padding-top:100px">
         <h4>Avís Legal</h4><br/>
-        <?php echo $data->data->description; ?>
+        <?php echo $data->data->description ?? ''; ?>
     </div>
     <?php
    include './plantilla/footer.php';

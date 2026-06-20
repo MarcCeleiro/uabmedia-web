@@ -1,10 +1,17 @@
+<?php
+	// Search term comes from the header search form (POST). Normalise once and
+	// always escape it on output to avoid a reflected-XSS hole and the
+	// "Undefined array key" warning when the page is opened without a query.
+	$cerca = isset($_POST["cerca"]) ? trim($_POST["cerca"]) : "";
+	$cercaSafe = htmlspecialchars($cerca, ENT_QUOTES, 'UTF-8');
+?>
 <!doctype html>
 <html lang="ca">
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta http-equiv="X-UA-Compatible" content="ie=edge">
-		<title>Cerca: <?php echo $_POST["cerca"] ?> - UABmèdia</title>
+		<title>Cerca: <?php echo $cercaSafe; ?> - UABmèdia</title>
 		<meta name="theme-color" content="#141414">
 		<meta name="robots" content="noindex">
 		<?php
@@ -16,7 +23,7 @@
 		include './plantilla/header.php';
 		?>
 		<div class="container">
-			<h1 class="titol-pagina">Resultats de cerca per: <?php echo $_POST["cerca"] ?></h1>
+			<h1 class="titol-pagina">Resultats de cerca per: <?php echo $cercaSafe; ?></h1>
 			<?php
 	include 'config.php';
 				$GET_VARS2 = array(
@@ -26,7 +33,7 @@
 
 				$POST_VARS = array(
 					"sortByFilter"          => "date",
-					"search"      			=> $_POST["cerca"],
+					"search"      			=> $cerca,
 					"statusFilter"			=> 1
 
 				);
@@ -93,7 +100,7 @@
 
 			$POST_VARS_news = array(
 				"sortByFilter"          => "date",
-				"search"      			=> $_POST["cerca"],
+				"search"      			=> $cerca,
 				"statusFilter"			=> 1
 			);
 

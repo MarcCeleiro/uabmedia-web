@@ -63,7 +63,7 @@ $data = json_decode($response);
 
 	<body>
 		<?php
-		include('../plantilla/header.php');
+		include('./plantilla/header.php');
 		?>
 
 		<div class="contingut">

@@ -264,9 +264,12 @@ $dadesClipsRecents = json_decode($respostaClipsRecents);
 			<section id="actualitat" style="margin-bottom:40px">
 				<a href="https://uab.media/actualitat"><h3 class="titol-seccio">Actualitat</h3></a>
 				<div class="row gx-4 actualitat-row">
-					<?php 
-					$a = $dadesClips->list['0']->date;
-					$b = $dadesNoticies->list['0']->date;
+					<?php
+					// Compare the newest featured clip (category 44) with the newest
+					// news item to decide which leads the section. Fall back to 0 so
+					// an empty category doesn't trigger null-property warnings.
+					$a = $dadesClips->list[0]->date ?? 0;
+					$b = $dadesNoticies->list[0]->date ?? 0;
 					if ($b >= $a):
 					?>
 					<a class="col-12 col-md-8 noticia-gran d-flex flex-column flex-md-row" href="/noticia/<?php echo $dadesNoticies->list['0']->id; ?>/<?php echo $dadesNoticies->list['0']->title_url; ?>">

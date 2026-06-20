@@ -5,7 +5,10 @@
     	"do"        => "get"
     );
     $REQUEST_URL = $API_URL."?".http_build_query($GET_VARS)."&".http_build_query($GET_VARS2);
-    
+
+    // "do=get" identifies the item via the query string (iq); no POST body needed.
+    $POST_VARS = array();
+
     $ch = curl_init();
     curl_setopt($ch, CURLOPT_URL, $REQUEST_URL);
     curl_setopt($ch, CURLOPT_POST, true);
