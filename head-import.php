@@ -41,19 +41,19 @@
         <script>function loadScript(a){var b=document.getElementsByTagName("head")[0],c=document.createElement("script");c.type="text/javascript",c.src="https://tracker.metricool.com/resources/be.js",c.onreadystatechange=a,c.onload=a,b.appendChild(c)}loadScript(function(){beTracker.t({hash:"2df722ee05acedce23a618df39452669"})});</script>
 		<link rel="preconnect" href="https://s3-eu-west-1.amazonaws.com">
 
-		<!-- Google tag (gtag.js) - GDPR Compliant -->
+		<!-- Google tag (gtag.js) - Compatible amb el RGPD -->
 		<script>
 		  window.dataLayer = window.dataLayer || [];
 		  function gtag(){dataLayer.push(arguments);}
 		  gtag('js', new Date());
 
-		  // Check if user has given consent for analytics
+		  // Comprova si l'usuari ha donat consentiment per a l'analítica
 		  if (localStorage.getItem('cookie_consent_analytics') === 'true') {
 		    gtag('config', 'G-ES1G92PJ17', {
 		      'anonymize_ip': true,
 		      'allow_google_signals': false,
 		      'allow_ad_features': false,
-		      'cookie_expires': 63072000, // 2 years in seconds
+		      'cookie_expires': 63072000, // 2 anys en segons
 		      'cookie_flags': 'SameSite=None;Secure'
 		    });
 		  }

@@ -6,7 +6,7 @@ $GET_VARS2 = array(
 );
 $REQUEST_URL = $API_URL . "?" . http_build_query($GET_VARS) . "&" . http_build_query($GET_VARS2);
 
-// "do=get" identifies the clip via the query string (iq); no POST body needed.
+// "do=get" identifica el clip mitjançant la query string (iq); no cal cos POST.
 $POST_VARS = array();
 
 $ch = curl_init();
@@ -100,7 +100,7 @@ $data = json_decode($response);
                                 );
                                 $REQUEST_URL_usuari = $API_URL."?".http_build_query($GET_VARS)."&".http_build_query($GET_VARS_usuari);
 
-                                // "do=get" identifies the category via the query string (iq); no POST body needed.
+                                // "do=get" identifica la categoria mitjançant la query string (iq); no cal cos POST.
                                 $POST_VARS_usuari = array();
 
                                 $ch_usuari = curl_init();
@@ -132,9 +132,9 @@ $data = json_decode($response);
 				"do"        => "list"
 			);
 
-			// Prefer the secondary category for related content, but fall back to
-			// the primary one when a clip only has a single category (avoids
-			// "Undefined array key 1" / null property reads).
+			// Prioritza la categoria secundària per al contingut relacionat, però recorre a
+			// la primària quan un clip només té una categoria (evita
+			// lectures de "Undefined array key 1" / propietats nul·les).
 			$relatedCategory = $data->categories[1]->id ?? ($data->categories[0]->id ?? null);
 			$POST_VARS3 = array(
 				"sortByFilter"          => "date",

@@ -6,7 +6,7 @@
     );
     $REQUEST_URL = $API_URL."?".http_build_query($GET_VARS)."&".http_build_query($GET_VARS2);
 
-    // "do=get" identifies the item via the query string (iq); no POST body needed.
+    // "do=get" identifica l'element mitjançant la query string (iq); no cal cos POST.
     $POST_VARS = array();
 
     $ch = curl_init();

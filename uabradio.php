@@ -17,7 +17,7 @@ Afegit per Marc Celeiro (marc.celeiro@uab.cat) el 18 desembre de 2025
 
 
 include 'config.php';
-//START Mòdul PHP carrousel
+//INICI Mòdul PHP carrusel
 $GET_VARS_carrousel = array(
 	"go"        => "clips",
 	"do"        => "list"
@@ -41,9 +41,9 @@ curl_setopt($ch_carrousel, CURLOPT_HEADER, false);
 curl_setopt($ch_carrousel, CURLOPT_POSTFIELDS, $POST_VARS_carrousel);
 $response_carrousel = curl_exec($ch_carrousel);
 $data_carrousel = json_decode($response_carrousel);
-//END mòdul PHP carrousel
+//FI mòdul PHP carrusel
 
-//START mòdul PHP graella.json. Per canviar la graella s'ha d'agafar l'arxiu graella.json i s'agafi els id dels programes/categories
+//INICI mòdul PHP graella.json. Per canviar la graella s'ha d'agafar l'arxiu graella.json i s'agafi els id dels programes/categories
 $programacion_semanal = json_decode(file_get_contents('graella.json'), true);
 $detalles_programas = null;
 
@@ -100,9 +100,9 @@ if ($detalles_programas === null) {
 	}
 	@file_put_contents($cacheFile, json_encode($detalles_programas), LOCK_EX);
 }
-//END mòdul PHP graella json
+//FI mòdul PHP graella json
 
-//START mòdul PHP categories/programes actius
+//INICI mòdul PHP categories/programes actius
 $GET_VARS_programes_actius = array(
 	"go"        => "categories",
 	"do"        => "list"
@@ -127,9 +127,9 @@ curl_setopt($ch_programes_actius, CURLOPT_POSTFIELDS, $POST_VARS_programes_actiu
 
 $response_programes_actius = curl_exec($ch_programes_actius);
 $data_programes_actius = json_decode($response_programes_actius); 
-//END mòdul PHP categories/programes actius
+//FI mòdul PHP categories/programes actius
 
-//START mòdul PHP categories/programes no actius, cataleg/arxiu. Status filter = 0
+//INICI mòdul PHP categories/programes no actius, catàleg/arxiu. Status filter = 0
 $GET_VARS_ARXIU = array(
 	"go"        => "categories",
 	"do"        => "list"
@@ -184,15 +184,15 @@ $data_ARXIU = json_decode($response_ARXIU);
 		?>
 	</head>
 	<style>
-		/* Media query for medium-sized screens */
+		/* Media query per a pantalles mitjanes */
 		@media (max-width: 992px) {
 			.carousel-caption {
-				/* Adjust the styling for medium-sized screens */
-				/* For example, you can reduce font size or truncate text */
-				font-size: 14px; /* Adjust as needed */
+				/* Ajusta l'estil per a pantalles mitjanes */
+				/* Per exemple, pots reduir la mida de lletra o truncar el text */
+				font-size: 14px; /* Ajusta segons calgui */
 				overflow: hidden;
 				white-space: nowrap;
-				text-overflow: ellipsis; /* Truncate text with ellipsis */
+				text-overflow: ellipsis; /* Trunca el text amb punts suspensius */
 			}
 		}
 	</style>
@@ -201,7 +201,7 @@ $data_ARXIU = json_decode($response_ARXIU);
 		<!-- Google Tag Manager (noscript) -->
 		<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MZGPM9HV"
 						  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-		<!-- End Google Tag Manager (noscript) -->
+		<!-- Fi de Google Tag Manager (noscript) -->
 		<?php
 		include './plantilla/header.php';
 		?>
@@ -274,7 +274,7 @@ $data_ARXIU = json_decode($response_ARXIU);
 						<div id="carouseluabmedia" class="carousel slide carousel-fade" data-ride="carousel">
 							<div class="carousel-inner m-auto">
 
-								<!--item 1 carrousel-->
+								<!--ítem 1 carrusel-->
 								<div class="carousel-item active">
 									<a href="/clip/<?php echo $data_carrousel->list['0']->id; ?>/<?php echo $data_carrousel->list['0']->title_url; ?>">
 										<img 
@@ -293,7 +293,7 @@ $data_ARXIU = json_decode($response_ARXIU);
 									</div>
 								</div>
 
-								<!--item 2 carrousel-->
+								<!--ítem 2 carrusel-->
 								<div class="carousel-item">
 									<a href="/clip/<?php echo $data_carrousel->list['1']->id; ?>/<?php echo $data_carrousel->list['1']->title_url; ?>">
 										<img 
@@ -312,7 +312,7 @@ $data_ARXIU = json_decode($response_ARXIU);
 									</div>
 								</div>
 
-								<!--item3 carrousel-->
+								<!--ítem 3 carrusel-->
 								<div class="carousel-item">
 									<a href="/clip/<?php echo $data_carrousel->list['2']->id; ?>/<?php echo $data_carrousel->list['2']->title_url; ?>">
 										<img 
@@ -331,7 +331,7 @@ $data_ARXIU = json_decode($response_ARXIU);
 									</div>
 								</div>
 
-								<!--item4 carrousel-->
+								<!--ítem 4 carrusel-->
 								<div class="carousel-item">
 									<a href="/clip/<?php echo $data_carrousel->list['3']->id; ?>/<?php echo $data_carrousel->list['3']->title_url; ?>">
 										<img 
@@ -350,7 +350,7 @@ $data_ARXIU = json_decode($response_ARXIU);
 									</div> 
 								</div>
 							</div>
-							<!--flechas carrousel-->
+							<!--fletxes carrusel-->
 							<a class="carousel-control-prev" href="#carouseluabmedia" role="button" data-slide="prev">
 								<span class="carousel-control-prev-icon" aria-hidden="true"></span>
 								<span class="sr-only">Previous</span>
@@ -408,7 +408,7 @@ $data_ARXIU = json_decode($response_ARXIU);
 				</div>
 			</section> 
 
-			<!--cataleg de programes=categories no actives. es podria fer el php més senzill?-->
+			<!--catàleg de programes=categories no actives. es podria fer el php més senzill?-->
 			<section id="llista-programes">
 				<h2 class="titol-seccio">Catàleg d'altres temporades de UABràdio</h2>
 				<div class="row">
@@ -440,7 +440,7 @@ $data_ARXIU = json_decode($response_ARXIU);
 					<?php } ?>
 				</div>
 			</section>
-			<!-- fi cataleg de programes=categories no actives-->
+			<!-- fi catàleg de programes=categories no actives-->
 			<?php
 			include './plantilla/footer.php';
 
@@ -485,9 +485,9 @@ $data_ARXIU = json_decode($response_ARXIU);
 
 
 		<script>
-			// AOS is loaded with "defer" in the footer, so it isn't available yet
-			// when this inline script runs. Initialise it once the DOM is ready
-			// (deferred scripts have executed by then) and guard for safety.
+			// AOS es carrega amb "defer" al peu, així que encara no està disponible
+			// quan s'executa aquest script en línia. L'inicialitzem quan el DOM està a punt
+			// (els scripts amb defer ja s'han executat) i ho protegim per seguretat.
 			document.addEventListener('DOMContentLoaded', function () {
 				if (window.AOS) {
 					AOS.init({ duration: 500 });

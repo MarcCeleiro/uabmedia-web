@@ -1,7 +1,7 @@
 <?php
-	// Search term comes from the header search form (POST). Normalise once and
-	// always escape it on output to avoid a reflected-XSS hole and the
-	// "Undefined array key" warning when the page is opened without a query.
+	// El terme de cerca ve del formulari de cerca de la capçalera (POST). El normalitzem un cop i
+	// sempre l'escapem a la sortida per evitar un forat de XSS reflectit i l'
+	// avís "Undefined array key" quan la pàgina s'obre sense cap consulta.
 	$cerca = isset($_POST["cerca"]) ? trim($_POST["cerca"]) : "";
 	$cercaSafe = htmlspecialchars($cerca, ENT_QUOTES, 'UTF-8');
 ?>

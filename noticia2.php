@@ -6,7 +6,7 @@ $GET_VARS2 = array(
 );
 $REQUEST_URL = $API_URL."?".http_build_query($GET_VARS)."&".http_build_query($GET_VARS2);
 
-// "do=get" identifies the item via the query string (iq); no POST body needed.
+// "do=get" identifica l'element mitjançant la query string (iq); no cal cos POST.
 $POST_VARS = array();
 
 $ch = curl_init();
@@ -70,9 +70,9 @@ $data = json_decode($response);
 				border-color:white;
 			}
 			.img-small {
-				max-width: 50%; /* Ajusta el tamaño máximo de la imagen */
-				height: auto; /* Mantiene la proporción de aspecto */
-				filter: brightness(100%); /* Ajusta el valor para cambiar el brillo */
+				max-width: 50%; /* Ajusta la mida màxima de la imatge */
+				height: auto; /* Manté la proporció d'aspecte */
+				filter: brightness(100%); /* Ajusta el valor per canviar la brillantor */
 			}
 
 		</style>

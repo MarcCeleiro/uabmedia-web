@@ -6,7 +6,7 @@ $GET_VARS2 = array(
 );
 $REQUEST_URL = $API_URL . "?" . http_build_query($GET_VARS) . "&" . http_build_query($GET_VARS2);
 
-// "do=get" identifies the clip via the query string (iq); no POST body needed.
+// "do=get" identifica el clip mitjançant la query string (iq); no cal cos POST.
 $POST_VARS = array();
 
 $ch = curl_init();
@@ -96,11 +96,11 @@ $data = json_decode($response);
 
 		<div class="container">
 			<button class="button-return" onclick="window.history.back();"><span class="material-symbols-outlined">reply</span></button>
-			<!--Fila con 2 columnas con reproducutor i descripcion-->
+			<!--Fila amb 2 columnes amb reproductor i descripció-->
 			<div class="row gx-5">
-				<!--Columna Boton volver + reproductor-->
+				<!--Columna Botó tornar + reproductor-->
 				<div class="col-12 col-md-12 col-lg-8">				
-					<!--Reproductor de video -->
+					<!--Reproductor de vídeo -->
 					<div id="reproductor"></div>
 					<script type="text/JavaScript">
 						jwplayer("reproductor").setup({ 
@@ -154,7 +154,7 @@ $data = json_decode($response);
 					);
 					$REQUEST_URL_usuari = $API_URL."?".http_build_query($GET_VARS)."&".http_build_query($GET_VARS_usuari);
 
-					// "do=get" identifies the category via the query string (iq); no POST body needed.
+					// "do=get" identifica la categoria mitjançant la query string (iq); no cal cos POST.
 					$POST_VARS_usuari = array();
 
 					$ch_usuari = curl_init();

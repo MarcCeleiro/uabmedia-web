@@ -57,7 +57,7 @@ $data = json_decode($response);
 		<?php
 		include './head-import.php';
 		?>
-		<!--Estilo -->
+		<!--Estil -->
 		<style>
 			.targeta {
 				padding: 0px 0px !important;
@@ -126,7 +126,7 @@ $data = json_decode($response);
 				<br/>
 				
 				<button class="button-return" onclick="window.history.back();"><a href="/uabradio"><span class="material-symbols-outlined">reply</span></a></button>
-				<!--Boton volver 
+				<!--Botó tornar 
 				<button class="button-return">
 					<a href="/uabradio.php">
 						<span class="material-symbols-outlined">reply</span>
@@ -135,7 +135,7 @@ $data = json_decode($response);
 				-->
 
 				<br/>
-				<!--Logo + Titulo + Icono i descripcion seo con el horario programa + info -->
+				<!--Logo + Títol + Icona i descripció seo amb l'horari del programa + info -->
 				<div class="d-flex align-items-center">
 					<img class="avatar-programa" 
 						 src="https://s3-eu-west-1.amazonaws.com/uabmedia/gallery_images/gallery_280_image_259_1718269037_large.jpg" 
@@ -152,7 +152,7 @@ $data = json_decode($response);
 				<br/><br/>
 				
 				<h2 class="titol-seccio h3">Capítols</h2><br/>
-				<!--viñetas con los clips de los programas -->
+				<!--vinyetes amb els clips dels programes -->
 				<div class="continguts-pre">
 					<div class="row">
                         <div class="col-12 col-md-4">

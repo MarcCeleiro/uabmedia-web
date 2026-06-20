@@ -277,10 +277,10 @@
 	}
 }
 
-/* Media query for screens with a maximum width of 767px */
+/* Media query per a pantalles amb amplada màxima de 767px */
 @media (max-width: 767px) {
 	header#capcalera {
-		padding: 10px 20px; /* Adjusted padding for smaller screens */
+		padding: 10px 20px; /* Padding ajustat per a pantalles petites */
 	}
 }
 

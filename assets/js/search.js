@@ -1,29 +1,29 @@
-// BUSCADOR INTERNO DE LA WEB
+// CERCADOR INTERN DE LA WEB
 
 
 
 
-//PASO1: declarar variables:
+//PAS 1: declarar variables:
 
 box_search = document.getElementById("box-search");
 cover_ctn_search = document.getElementById("ctn-bars-search");
 inputSearch = document.getElementById("inputSearch");
 contingut = document.getElementsByClassName("contingut");
 
-//PASO 2: crear funciones
+//PAS 2: crear funcions
 
-//función para mostrar el buscador
+//funció per mostrar el cercador
 function mostrar_buscador(){
 	box_search.style.top=("80px");
 	inputSearch.focus();
 }
 
-//función para ocultar el buscador al hacer clic fuera
+//funció per amagar el cercador en fer clic fora
 function ocultar_buscador(){
 	box_search.style.top=("-80px");
 }
 
-//PASO 3: Ejecutar funciones escritas debajo en el paso 3:
+//PAS 3: Executar les funcions escrites a sota al pas 3:
 document.getElementById("icon-search").addEventListener("click", mostrar_buscador);
 
 let elementos = document.getElementsByClassName("contingut");

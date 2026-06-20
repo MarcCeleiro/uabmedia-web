@@ -13,7 +13,7 @@ Afegit per Marc Celeiro (marc.celeiro@uab.cat) el 18 de desembre de 2025
 
 include 'config.php';
 
-//START mòdul clips de video actius
+//INICI mòdul clips de vídeo actius
 $GET_VARS_PROG = array(
 	"go"        => "categories",
 	"do"        => "list"
@@ -37,9 +37,9 @@ curl_setopt($ch_PROG, CURLOPT_POSTFIELDS, $POST_VARS_PROG);
 
 $response_PROG = curl_exec($ch_PROG);
 $data_PROG = json_decode($response_PROG);
-//END mòdul clips de videos actius 
+//FI mòdul clips de vídeos actius 
 
-//START mòdul clips cataleg					
+//INICI mòdul clips catàleg					
 $GET_VARS_ARXIU = array(
 	"go"        => "categories",
 	"do"        => "list"
@@ -64,7 +64,7 @@ curl_setopt($ch_ARXIU, CURLOPT_POSTFIELDS, $POST_VARS_ARXIU);
 
 $response_ARXIU = curl_exec($ch_ARXIU);
 $data_ARXIU = json_decode($response_ARXIU);	
-//END mòdul clips no actius (statusfilter=0) pel catelg
+//FI mòdul clips no actius (statusfilter=0) pel catàleg
 ?>
 <!doctype html>
 <html lang="ca">

@@ -37,7 +37,7 @@ $data = json_decode($response);
 					'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 									})(window,document,'script','dataLayer','GTM-5MVV29M');
 		</script>
-		<!-- End Google Tag Manager -->
+		<!-- Fi de Google Tag Manager -->
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -86,7 +86,7 @@ $data = json_decode($response);
 						  height="0" width="0" style="display:none;visibility:hidden">
 			</iframe>
 		</noscript>
-		<!-- End Google Tag Manager (noscript) -->
+		<!-- Fi de Google Tag Manager (noscript) -->
 		
 		
 

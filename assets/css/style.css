@@ -1,6 +1,6 @@
 :root {
-	--um-radius: 12px;     /* images, image/bg containers, cards, modals */
-	--um-radius-sm: 8px;   /* buttons, inputs, small chips */
+	--um-radius: 12px;     /* imatges, contenidors amb imatge de fons, targetes, modals */
+	--um-radius-sm: 8px;   /* botons, inputs, xips petits */
 }
 
 .bloc-inici {
@@ -25,7 +25,7 @@
 	margin-bottom: 25px;
 }
 
-/*boton index*/
+/*botó índex*/
 
 /* JW Player */
 .jw-flag-audio-player {
@@ -132,8 +132,8 @@ h1 ,h2, h3, h4, h5, h6 {
 	color: #fff;
 }
 
-/* UABmèdia uses a single, non-bold weight: keep <strong>/<b> at 400 too
-   (Montserrat ships as one weight, so bold would only render as faux-bold). */
+/* UABmèdia fa servir un únic pes, sense negreta: manté <strong>/<b> també a 400
+   (Montserrat es carrega com un sol pes, així que la negreta seria només sintètica). */
 strong, b {
 	font-weight: 400;
 }
@@ -150,7 +150,7 @@ img.graella-imatge {
 
 /* Fi general */
 
-/* BARRA INFORMATIUS DE INDEX */
+/* BARRA D'INFORMATIUS DE L'ÍNDEX */
 
 .informatiuIndex {
 	padding: 0;
@@ -206,7 +206,7 @@ img.graella-imatge {
 	width: 100%;	
 }
 
-/* CONTADOR MODAL */
+/* COMPTADOR MODAL */
 
 .toggle-play, .play {
 	cursor: pointer;
@@ -264,18 +264,18 @@ img.graella-imatge {
 	margin-top: 80px;
 }
 
-/* Simple content pages (legal, participa, cookies, qui-som) */
+/* Pàgines de contingut simple (legal, participa, cookies, qui-som) */
 .pagina-simple {
 	padding-top: 40px;
 }
 
-/* Category-nav column on the /noticies/* listing pages */
+/* Columna de navegació de categories a les pàgines de llistat de notícies */
 .menu-categories {
 	margin-bottom: 2%;
 	padding-left: 0 !important;
 }
 
-/* Leading logo before a page title (uabradio/uabplay/actualitat/especials) */
+/* Logotip que precedeix el títol de pàgina (uabradio/uabplay/actualitat/especials) */
 .logo-titol {
 	margin-right: 20px;
 	height: 30px;
@@ -283,7 +283,7 @@ img.graella-imatge {
 	fill: #fff;
 }
 
-/* Round avatars: programme header (large) and author byline (small) */
+/* Avatars rodons: capçalera de programa (gran) i autoria (petit) */
 .avatar-programa {
 	margin-right: 20px;
 	width: 120px;
@@ -296,7 +296,7 @@ img.graella-imatge {
 	border-radius: 50%;
 }
 
-/* Detail pages: clip / programa / aru */
+/* Pàgines de detall: clip / programa / aru */
 .titol-detall {
 	font-size: 2rem;
 }
@@ -315,7 +315,7 @@ img.graella-imatge {
 	margin-bottom: 40px !important;
 }
 
-/* qui-som contact links + intro image */
+/* Enllaços de contacte + imatge d'introducció de qui-som */
 .enllac-blau {
 	color: #99BBFF;
 }
@@ -331,7 +331,7 @@ img.graella-imatge {
 	margin: 14px 0 20px;
 }
 
-/* Homepage welcome bloc + featured card */
+/* Bloc de benvinguda de la portada + targeta destacada */
 .titol-benvinguda {
 	font-size: 1.4em;
 }
@@ -345,14 +345,14 @@ img.graella-imatge {
 	min-height: 600px;
 }
 
-/* JWPlayer video container (noticia.php) */
+/* Contenidor de vídeo de JWPlayer (noticia.php) */
 .player-jw {
 	width: 100%;
 	height: 225px;
 	margin: 20px 0;
 }
 
-/* Misc one-off blocks */
+/* Blocs puntuals diversos */
 .img-peu {
 	width: 100%;
 	margin-top: 10px;
@@ -368,7 +368,7 @@ img.graella-imatge {
 	width: 300px;
 }
 
-/* Small spacing helpers (exact 40px values reused on a few pages) */
+/* Ajudants d'espaiat petits (valors exactes de 40px reutilitzats en algunes pàgines) */
 .mt-40 {
 	margin-top: 40px;
 }
@@ -388,7 +388,7 @@ img.graella-imatge {
 	border: 0;
 }
 
-/* Footer */
+/* Peu de pàgina */
 
 footer {
 	padding: 36px 0 100px 0;
@@ -431,7 +431,7 @@ footer .legal ul li {
 	margin: 0 0.8rem 0 0;
 }
 
-/* Fi footer */
+/* Fi del peu de pàgina */
 
 /* Capçalera */
 
@@ -486,7 +486,7 @@ header .icones-socials {
 	gap: 30px;
 }
 
-/* ICONO DE BÚSQUEDA */
+/* ICONA DE CERCA */
 #ctn-icon-search i{
 	color: grey;
 	cursor: pointer;
@@ -496,7 +496,7 @@ header .icones-socials {
 	color: white;
 }
 
-/* CONTENEDOR DE LA BARRA DE BÚSQUEDA
+/* CONTENIDOR DE LA BARRA DE CERCA
 .um-search-bar .searchbox .search-link {*/
 #box-search {
 	position: fixed;
@@ -508,7 +508,7 @@ header .icones-socials {
 	transition: all 600ms;
 }
 
-/* INPUT DE BÚSQUEDA
+/* INPUT DE CERCA
 .um-search-bar .search-input {*/
 #ctn-bars-search{
 	display: inline-flex;
@@ -1439,45 +1439,45 @@ label {
 }
 
 
-/*carousel inici */
+/*carrusel inici */
 
-/* Media query for medium-sized screens */
+/* Media query per a pantalles mitjanes */
 @media (max-width: 992px) {
 	.carousel-caption {
-		/* Adjust the styling for medium-sized screens */
-		/* For example, you can reduce font size or truncate text */
-		font-size: 14px; /* Adjust as needed */
+		/* Ajusta l'estil per a pantalles mitjanes */
+		/* Per exemple, pots reduir la mida de lletra o truncar el text */
+		font-size: 14px; /* Ajusta segons calgui */
 		overflow: hidden;
 		white-space: nowrap;
-		text-overflow: ellipsis; /* Truncate text with ellipsis */
+		text-overflow: ellipsis; /* Trunca el text amb punts suspensius */
 	}
 }
 #carouseluabmedia {
-	width: 100%; /* Adjust the height as needed */
-	overflow: hidden; /* Ensure content doesn't overflow */
+	width: 100%; /* Ajusta l'alçada segons calgui */
+	overflow: hidden; /* Assegura que el contingut no desbordi */
 }
 
 #carouseluabmedia .carousel-item img {
-	height: 100%; /* Ensure images scale properly */
-	object-fit: cover; /* Ensure images cover the entire carousel item */
+	height: 100%; /* Assegura que les imatges escalin correctament */
+	object-fit: cover; /* Assegura que les imatges cobreixin tot l'element del carrusel */
 	margin-top: 10p
 }
 
 #carouseluabmedia .carousel-caption {
-	bottom: 20px; /* Adjust caption position if needed */
+	bottom: 20px; /* Ajusta la posició del títol si cal */
 }
 
-/* Media queries for responsiveness */
+/* Media queries per a la responsivitat */
 @media (max-width: 768px) {
 	#carouseluabmedia {
-		max-height: 50vh; /* Adjust height for smaller screens */
+		max-height: 50vh; /* Ajusta l'alçada per a pantalles petites */
 	}
 	
 }
 
 @media (min-width: 769px) and (max-width: 1200px) {
 	#carouseluabmedia {
-		max-height: 60vh; /* Adjust height for medium screens */
+		max-height: 60vh; /* Ajusta l'alçada per a pantalles mitjanes */
 	}
 	
 }

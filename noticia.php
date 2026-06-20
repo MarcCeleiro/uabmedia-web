@@ -1,8 +1,8 @@
 <?php
 include 'config.php';
 
-// "do=get" requests identify the item via the query string (iq); no POST body
-// is needed. Defined in global scope so replaceStaffEmbeddedVideos() can reuse it.
+// les peticions "do=get" identifiquen l'element mitjançant la query string (iq); no cal cos POST
+// cal. Definit a l'àmbit global perquè replaceStaffEmbeddedVideos() el pugui reutilitzar.
 $POST_VARS = array();
 
 // Funció per reemplaçar vídeos incrustats de staff.uab.media amb JW Player
@@ -154,9 +154,9 @@ $data = json_decode($response);
 				border-color:white;
 			}
 			.img-small {
-				max-width: 50%; /* Ajusta el tamaño máximo de la imagen */
-				height: auto; /* Mantiene la proporción de aspecto */
-				filter: brightness(100%); /* Ajusta el valor para cambiar el brillo */
+				max-width: 50%; /* Ajusta la mida màxima de la imatge */
+				height: auto; /* Manté la proporció d'aspecte */
+				filter: brightness(100%); /* Ajusta el valor per canviar la brillantor */
 			}
 
 		</style>

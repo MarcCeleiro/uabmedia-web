@@ -13,7 +13,7 @@ Afegit per Marc Celeiro (marc.celeiro@uab.cat) el 18 de desembre de 2025
 
 include 'config.php';
 
-//START mòdul agafar el programa i identificar-lo
+//INICI mòdul agafar el programa i identificar-lo
 $GET_VARS_PROG_id = array(
 	"go" => "categories",
 	"do" => "get"
@@ -37,9 +37,9 @@ $response = curl_exec($ch);
 $data_PROG_id = json_decode($response);
 
 
-//END mòdul agafar el programa
+//FI mòdul agafar el programa
 
-//START mòdul llista clips del programa
+//INICI mòdul llista clips del programa
 $GET_VARS_clips = array(
 	"go" => "clips",
 	"do" => "list"
@@ -64,7 +64,7 @@ curl_setopt($ch_clips, CURLOPT_POSTFIELDS, $POST_VARS_clips);
 $response_clips = curl_exec($ch_clips);
 $data_clips = json_decode($response_clips);
 
-//END mòdul llista clips del programa
+//FI mòdul llista clips del programa
 ?>
 
 <!doctype html>
@@ -130,7 +130,7 @@ $data_clips = json_decode($response_clips);
 		<div class="container">
 			<button class="button-return" onclick="window.history.back();"><span class="material-symbols-outlined">reply</span></button>
 
-			<!--Logo + Titulo + Icono i descripcion seo con el horario programa + info -->
+			<!--Logo + Títol + Icona i descripció seo amb l'horari del programa + info -->
 			<div class="d-flex align-items-center">
 				<img class="avatar-programa"
 					 src="<?php echo htmlspecialchars(trim($data_PROG_id->data->img_social)); ?>"
@@ -147,7 +147,7 @@ $data_clips = json_decode($response_clips);
 			<br/><br/>
 
 			<h2 class="titol-seccio">Capítols</h2>
-			<!--viñetas con los clips de los programas -->
+			<!--vinyetes amb els clips dels programes -->
 			<div class="continguts-pre">
 				<div class="row">
 					<?php

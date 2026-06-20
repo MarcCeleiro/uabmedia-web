@@ -14,9 +14,9 @@
     $GET_VARS["salt"] = $salt;
     $GET_VARS["key"] = $API_KEY_ID;
     $GET_VARS["signature"] = $signature;
-    // Use null coalescing so a missing parameter is simply omitted from the
-    // API query (http_build_query skips null values) instead of raising an
-    // "Undefined array key" warning. Behaviour sent to the API is unchanged.
+    // Fem servir la coalescència nul·la perquè un paràmetre absent simplement s'ometi de la
+    // consulta a l'API (http_build_query omet els valors nuls) en lloc de provocar un
+    // avís "Undefined array key". El comportament enviat a l'API no canvia.
     $GET_VARS["go"] = $_REQUEST['go'] ?? null;
     $GET_VARS["do"] = $_REQUEST['do'] ?? null;
     $GET_VARS["iq"] = $_REQUEST['iq'] ?? null;
