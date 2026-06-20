@@ -15,7 +15,6 @@
 	background-color: #222;
 	padding: 28px;
 	border-radius: var(--um-radius, 12px);
-	min-height: 300px;
 }
 
 .carousel-item:before, .carousel-inner {
@@ -605,7 +604,8 @@ header .navbar ul li:last-child {
 /* Notícia petita */
 
 .noticia-petita {
-	height: 500px;
+	display: block;
+	margin-bottom: 24px;
 }
 
 .noticia-petita .imatge-destacada {
@@ -613,6 +613,10 @@ header .navbar ul li:last-child {
 	width: 100%;
 	object-fit: cover;
 	border-radius: var(--um-radius, 12px);
+}
+
+.noticia-petita .contingut-noticia {
+	min-height: 120px;
 }
 
 .noticia-petita .titol {
@@ -681,10 +685,8 @@ header .navbar ul li:last-child {
 }
 
 .um-capcalera {
-	margin-top: 80px;
 	display: flex;
 	margin-bottom: 10px;
-
 }
 
 .navbar-expand-lg .navbar-nav .nav-link {
