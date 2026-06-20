@@ -66,10 +66,6 @@
     margin-bottom: 40px;
 }
 
-.noticia-petita .noticia_flex {
-    background-size: cover;
-    background-position: center;
-}
 
 .fila-petites {
     margin-bottom: 40px;
@@ -1321,19 +1317,6 @@ label {
 	color: gray
 }
 
-.noticia_flex {
-	border-radius: var(--um-radius, 12px);
-	height: 18vh;
-	width: 100%;
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: center;
-	transition: all 400ms ease;
-}
-.noticia_flex:hover{
-	box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
-	transform:translateY(-3%);
-}
 .titol-capcelera{
 	font-size: 2.369em;
 	display: flex;

@@ -218,19 +218,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 		  
 		  	for ($i = 0; $i < count($data_uab->list); $i++) {
 		  ?>
-		   <div class="col-12 col-md-4">
-           <div class="bloc-imatges position-relativ clicable" onclick="window.location= '/noticia/<?php echo $data_uab->list[$i]->id; ?>/<?php echo $data_uab->list[$i]->title_url; ?>'">
-              <div class="img-noticia noticia_flex" style="background-image:url(<?php echo $data_uab->list[$i]->img_social; ?>)">
-              </div>
-            </div>
-            <br/>
-            <h2 class="titol h6"><a href="/noticia/<?php echo $data_uab->list[$i]->id; ?>/<?php echo $data_uab->list[$i]->title_url; ?>"><?php echo $data_uab->list[$i]->title; ?></a></h2>
-            <div class="capitol d-flex align-items-center my-2">
-              <span class="text-white"><?php echo substr($data_uab->list[$i]->date_formatted, 0, -9); ?>	</span>
-            </div>
-            <br /><br />
-          </div>
-		  <?php } ?>
+							<a class="col-12 col-md-4 noticia-petita" href="/noticia/<?php echo $data_uab->list[$i]->id; ?>/<?php echo $data_uab->list[$i]->title_url; ?>">
+								<img class="imatge-destacada" src="<?php echo $data_uab->list[$i]->img_poster; ?>" alt="<?php echo $data_uab->list[$i]->title; ?>">
+								<div class="contingut-noticia">
+									<h2 class="titol"><?php echo $data_uab->list[$i]->title; ?></h2>
+									<p class="data"><?php echo substr($data_uab->list[$i]->date_formatted, 0, -9); ?></p>
+								</div>
+							</a>
+							<?php } ?>
 		</div>		
 </div>
 			</section>
