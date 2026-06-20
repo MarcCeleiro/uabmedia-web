@@ -1,0 +1,301 @@
+/* Canvi de colors predeterminats */
+
+body {
+	background-color: #fff!important;
+	color: black!important;
+}
+
+.uabmedia-title {
+    color: black!important;
+}
+
+header .navbar ul li.menu-item a {
+	color: black!important;
+}
+
+header .navbar-light .menu-item svg {
+	filter: invert(15%) sepia(0%) saturate(3102%) hue-rotate(66deg) brightness(89%) contrast(81%)!important;
+}
+
+.social-icons svg {
+    filter: invert(15%) sepia(0%) saturate(3102%) hue-rotate(66deg) brightness(89%) contrast(81%)!important;
+}
+
+header .nav-icon a {
+	color: #333;
+}
+
+header .navbar ul li.menu-item a:hover {
+    color: var(--primari)!important;
+}
+
+/* Notícia */
+
+.um-blog-box {
+	position: relative;
+	overflow: hidden;
+}
+
+.um-blog-box .titol {
+	font-size: 2.5em!important;
+	font-family: 'Merriweather', serif;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 20px;
+	color: black!important;
+}
+
+@media(max-width:991px) {
+	.um-blog-box .titol {
+		font-size: 2em!important;
+	}
+}
+
+.um-blog-box .subtitol {
+	font-size: 1.2em;
+	font-weight: normal!important;
+	color: black!important;
+}
+
+.um-blog-box h2, .um-blog-box h3, .um-blog-box h4, .um-blog-box h5 .um-blog-box h6 {
+	font-size: 1.5em!important;
+	font-family: 'Merriweather', serif;
+	line-height: 1.2;
+	font-weight: 600;
+	margin: 50px 0 20px 0!important;
+	color: black!important;
+}
+
+.um-blog-box a {
+	color: #FF4C3E!important;
+}
+
+.um-blog-box .um-blog-image {
+	position: relative;
+	text-align: center;
+	display: inline-block;
+	width: 100%
+}
+
+.um-blog-box .um-blog-image img {
+	margin-bottom: 1em;
+	background: var(--blanc-light-color)
+}
+
+img {
+	max-width: 100%;
+	height: auto
+}
+
+.has-post-thumbnail .um-blog-box .detall-noticia {
+	display: inline-block;
+	width: 100%
+}
+
+.um-blog-box .detall-noticia .um-blog-meta ul {
+	margin: 0 0 1.25em;
+	padding: 0;
+	line-height: 1em
+}
+
+.um-blog-meta ul li {
+	color: var(--blanc-color);
+	text-transform: uppercase;
+	font-size: 0.875em;
+	position: relative;
+	overflow: hidden;
+	display: inline-block
+}
+
+.blog-button .button-link,
+.comment-respond .form-submit .submit,
+.commentlist .um-comments-media .reply a {
+	background: var(--primari-hover);
+	color: var(--blanc-color);
+	display: inline-block;
+	vertical-align: middle;
+	padding: 10px;
+	font-size: 14px;
+	line-height: 1.5;
+	text-transform: uppercase;
+	letter-spacing: 1.5px
+}
+
+.um-blog-box .um-blogcat {
+	padding: 0;
+	display: inline-block;
+	width: 100%;
+	position: static;
+	margin: 1.875em 0 0
+}
+
+.um-blog-box .um-blogcat li {
+	list-style: none;
+	float: left;
+	margin: 0 0.625em 0.625em 0
+}
+
+.um-blog-box .um-blogcat li a {
+	background: rgba(41, 41, 41, 0.76);
+	color: var(--text-body);
+	padding: 0.313em 0.625em;
+	text-transform: uppercase;
+	font-size: 0.875em
+}
+
+.um-blog-box .um-blogtag {
+	padding: 0;
+	display: inline-block;
+	width: 100%;
+	margin-top: 0;
+	margin-bottom: 0
+}
+
+.um-blog-box .um-blogtag li {
+	list-style: none;
+	float: left;
+	margin: 0 0.625em 0.625em 0
+}
+
+.um-blog-box .um-blogtag li a {
+	background: rgba(41, 41, 41, 0.76);
+	color: var(--text-body);
+	padding: 0.313em 0.625em;
+	text-transform: uppercase;
+	font-size: 0.875em
+}
+
+blockquote {
+	padding: 15px 30px;
+	border-left: 10px solid var(--primari);
+	margin-top: 20px;
+	margin-bottom: 20px;
+	border-radius: 8px
+}
+
+blockquote p {
+	margin-bottom: 0 !important
+}
+
+blockquote cite {
+	font-weight: bold
+}
+
+cite a {
+	color: var(--primari)
+}
+
+embed,
+iframe,
+object {
+	max-width: 100%;
+	width: 100%
+}
+
+/* Widget darreres notícies */
+
+.darreres-noticies {
+	margin-bottom: 1.875em;
+	display: inline-block;
+	width: 100%;
+	position: relative;
+	color: black!important;
+}
+
+.darreres-noticies .titol-widget {
+	font-size: 1.3rem!important;
+	font-weight: 600;
+	margin-bottom: 1rem;
+	padding-bottom: clamp(0.13rem,calc(0.13rem + 0vw),0.13rem);
+	border-bottom: 2px solid #fff;
+	color: black!important;
+}
+
+.darreres-noticies .noticia .titol {
+	font-family: 'Merriweather', serif;
+	font-size: 1rem;
+	line-height: 1.2;
+	color: black!important;
+}
+
+.darreres-noticies ul {
+	padding-left: 0;
+	list-style: none;
+}
+
+.darreres-noticies .noticia .titol {
+	font-family: 'Merriweather', serif;
+	font-size: 1rem;
+	line-height: 1.2;
+	color: black!important;
+}
+
+.post-img-holder {
+	width: 80px;
+	margin-right: 20px;
+	flex: none;
+	line-height: 0
+}
+
+.post-img-holder a {
+	display: block;
+	width: 100%;
+	height: 70px;
+	overflow: hidden;
+	background-position: center bottom;
+	background-size: cover;
+	background-repeat: no-repeat
+}
+
+.um-widget-menu .post-img .post-blog .blog-box ul li {
+	margin-bottom: 0
+}
+
+.widget ul li:last-child {
+	padding-bottom: 0
+}
+
+.widget_archive ul li,
+.widget_categories ul li,
+.widget_pages ul li {
+	margin-bottom: 15px;
+	border-bottom: 1px solid rgba(82, 95, 129, 0.1)
+}
+
+.widget ul {
+	padding: 0;
+	margin: 0
+}
+
+.um-widget-menu .um-post li a.date-widget {
+	color: var(--primari);
+	margin-bottom: 10px;
+	display: block;
+	font-size: 12px;
+	font-weight: 700
+}
+
+.um-widget-menu ul.um-post li .post-img {
+	display: flex;
+	align-content: flex-start;
+	align-items: flex-start;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	margin-bottom: 20px;
+}
+
+.list-inline {
+	padding-left: 0;
+	list-style: none;
+}
+
+.noticia ul li {
+	padding-bottom: 15px;
+	list-style: none;
+	margin-bottom: 15px
+}
+
+footer {
+	color: white!important;
+}

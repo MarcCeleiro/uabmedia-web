@@ -1,0 +1,10 @@
+User-agent: *
+Disallow: /404
+Disallow: /embed/
+Disallow: /cdn-cgi/
+Disallow: /legal
+
+User-agent: GPTBot
+Disallow: /
+
+Sitemap: https://uab.media/sitemap.xml

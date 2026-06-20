@@ -1,0 +1,155 @@
+{
+  "Dilluns": [
+    {
+      "id": "104",
+      "hora_inici": "10:00"
+    },
+    {
+      "id": "51",
+      "hora_inici": "12:00"
+    },
+	      {
+      "id": "77",
+      "hora_inici": "16:00"
+    },
+	      {
+      "id": "110",
+      "hora_inici": "18:00"
+    },
+    {
+      "id": "106",
+      "hora_inici": "20:00"
+    }
+  ],
+  "Dimarts": [
+    {
+      "id": "76",
+      "hora_inici": "9:00"
+    },
+    {
+      "id": "5",
+      "hora_inici": "11:00"
+    },
+    {
+      "id": "73",
+      "hora_inici": "15:00"
+    },
+
+    {
+      "id": "100",
+      "hora_inici": "20:00"
+    }
+  ],
+  "Dimecres": [
+    {
+      "id": "51",
+      "hora_inici": "9:00"
+    },
+    {
+      "id": "110",
+      "hora_inici": "12:00"
+    },
+	      {
+      "id": "2",
+      "hora_inici": "13:00"
+    },
+    {
+      "id": "104",
+      "hora_inici": "16:00"
+    },
+    {
+      "id": "95",
+      "hora_inici": "20:00"
+    }
+  ],
+  "Dijous": [
+   
+    {
+      "id": "100",
+      "hora_inici": "10:00"
+    },
+    {
+      "id": "106",
+      "hora_inici": "12:00"
+    },
+    {
+      "id": "73",
+      "hora_inici": "15:00"
+    },
+    {
+      "id": "108",
+      "hora_inici": "17:00"
+    },
+    {
+      "id": "76",
+      "hora_inici": "20:00"
+    }
+  ],
+  "Divendres": [
+
+    {
+      "id": "77",
+      "hora_inici": "10:00"
+    },
+    {
+      "id": "95",
+      "hora_inici": "12:00"
+    },
+    {
+      "id": "2",
+      "hora_inici": "13:00"
+    },
+    {
+      "id": "5",
+      "hora_inici": "17:00"
+    },
+    {
+      "id": "110",
+      "hora_inici": "19:00"
+    }
+  ],
+  "Dissabte": [
+    {
+      "id": "108",
+      "hora_inici": "9:00"
+    },
+    {
+      "id": "51",
+      "hora_inici": "11:00"
+    },
+    {
+      "id": "76",
+      "hora_inici": "14:00"
+    },
+    {
+      "id": "106",
+      "hora_inici": "16:00"
+    },
+    {
+      "id": "104",
+      "hora_inici": "20:00"
+    }
+  ],
+  "Diumenge": [
+    {
+      "id": "95",
+      "hora_inici": "10:00"
+    },
+    {
+      "id": "73",
+      "hora_inici": "12:00"
+    },
+    {
+      "id": "100",
+      "hora_inici": "14:00"
+    },
+    {
+      "id": "5",
+      "hora_inici": "17:00"
+    },
+    {
+      "id": "77",
+      "hora_inici": "20:00"
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+#live-player {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1000;
+    color: #000 !important;
+    background-color: #ffe8e0 !important;
+    padding: 10px 25px;
+    border-radius: 12px;
+    width: 100%;
+	max-width: 700px;
+    margin: 0 auto;
+}
+
+#live-player .container {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    max-width: 100%;
+}
+
+#program-image {
+    width: 60px;
+    height: 60px;
+    margin-right: 20px;
+    border-radius: 12px;
+    display: inline-block;
+}
+
+#live-text {
+	font-size: 10pt;
+}
+
+#program-details {
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#program-info {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 250px;
+    vertical-align: middle;
+    font-size: 1.2em;
+}
+
+.icon-button {
+    background: none;
+    border: none;
+    color: #000;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.icon-button:focus {
+    outline: none;
+    color: #000;
+}
+
+.icon-button:active {
+    color: #000;
+}
+
+.gradient-background.active {
+    background: linear-gradient(270deg, #ffe8e0, #feb47b);
+    background-size: 400% 400%;
+    animation: gradientAnimation 8s ease infinite;
+}
+
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
