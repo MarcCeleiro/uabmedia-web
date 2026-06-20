@@ -41,10 +41,6 @@
 		<meta property="og:description" content="UABmèdia és una plataforma d’articulació de continguts interactius que elabora l’alumnat de forma homologable als que produeixen altres mitjans." />
 		<meta property="og:image" content="https://uab.media/assets/images/uabmedia_twitter.jpeg" />
 		<link rel="shortcut icon" href="https://uab.media/assets/images/favicon.png" />
-		<link rel="stylesheet" href="https://uab.media/assets/css/bootstrap.min.css" />
-		<link rel="stylesheet" href="https://uab.media/assets/css/typography.css">
-		<link rel="stylesheet" href="https://uab.media/assets/css/style.css" />
-		<link rel="stylesheet" href="https://uab.media/assets/css/responsive.css" />
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://s3-eu-west-1.amazonaws.com">
 		<?php

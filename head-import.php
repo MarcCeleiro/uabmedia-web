@@ -1,4 +1,14 @@
-<meta name="apple-mobile-web-app-title" content="UABmèdia">
+<?php
+		// Versiona els CSS locals amb el seu filemtime (?v=...) per forçar el
+		// navegador a baixar la versió nova quan el fitxer canvia (anti-cau).
+		if (!function_exists('um_css')) {
+			function um_css($path) {
+				$file = __DIR__ . $path;
+				return $path . (is_file($file) ? '?v=' . filemtime($file) : '');
+			}
+		}
+		?>
+		<meta name="apple-mobile-web-app-title" content="UABmèdia">
 		<link rel="shortcut icon" href="https://uab.media/assets/images/favicon.png" />
 		<link rel="apple-touch-icon" href="./assets/images/icons/apple-touch-icon.png" />
 		<link rel="apple-touch-icon" sizes="57x57" href="./assets/images/icons/apple-touch-icon-57x57.png" />
@@ -25,14 +35,14 @@
 			<link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
 		</noscript>
 
-		<link href="/assets/css/style.css" rel="stylesheet" media="print" onload="this.media='all'">
+		<link href="<?php echo um_css('/assets/css/style.css'); ?>" rel="stylesheet" media="print" onload="this.media='all'">
 		<noscript>
-			<link href="/assets/css/style.css" rel="stylesheet">
+			<link href="<?php echo um_css('/assets/css/style.css'); ?>" rel="stylesheet">
 		</noscript>
 
-		<link rel="stylesheet" href="/assets/css/directes.css" />
-		<link rel="stylesheet" href="/assets/css/typography.css" />
-		<link rel="stylesheet" href="/assets/css/responsive.css" />
+		<link rel="stylesheet" href="<?php echo um_css('/assets/css/directes.css'); ?>" />
+		<link rel="stylesheet" href="<?php echo um_css('/assets/css/typography.css'); ?>" />
+		<link rel="stylesheet" href="<?php echo um_css('/assets/css/responsive.css'); ?>" />
 
 		<script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
 

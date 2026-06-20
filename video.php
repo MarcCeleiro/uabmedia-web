@@ -47,10 +47,10 @@ $data = json_decode($response);
 	<meta property="og:image" content="<?php echo $data->data->img_social; ?>" />
 	<link rel="canonical" href="https://uab.media/clip/<?php echo $data->data->id; ?>/<?php echo $data->data->title_url; ?>">
 	<link rel="shortcut icon" href="https://uab.media/assets/images/favicon.png" />
-	<link rel="stylesheet" href="https://uab.media/assets/css/bootstrap.min.css" />
-	<link rel="stylesheet" href="https://uab.media/assets/css/typography.css">
-	<link rel="stylesheet" href="https://uab.media/assets/css/style.css" />
-	<link rel="stylesheet" href="https://uab.media/assets/css/responsive.css" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="/assets/css/typography.css">
+	<link rel="stylesheet" href="/assets/css/style.css" />
+	<link rel="stylesheet" href="/assets/css/responsive.css" />
 	<link rel="stylesheet" href="https://uab.media/assets/player/video.css" />
 	<link rel="stylesheet" href="https://uab.media/assets/player/video-js.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">

@@ -57,10 +57,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 	<link rel="preconnect" href="https://s3-eu-west-1.amazonaws.com">
 	<link rel="shortcut icon" href="https://uab.media/assets/images/favicon.png" />
 	<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.min.css" rel="stylesheet">
-	<link rel="stylesheet" href="https://uab.media/assets/css/bootstrap.min.css" />
-	<link rel="stylesheet" href="https://uab.media/assets/css/typography.css">
-	<link rel="stylesheet" href="https://uab.media/assets/css/style.css" />
-	<link rel="stylesheet" href="https://uab.media/assets/css/responsive.css" />
 	<style>
 		.targeta {
 			padding: 0px 0px !important;

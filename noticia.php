@@ -131,7 +131,7 @@ $data = json_decode($response);
 		<?php
 		include './head-import.php';
 		?>
-		<link rel="stylesheet" href="https://uab.media/assets/css/noticia.css" />
+		<link rel="stylesheet" href="/assets/css/noticia.css" />
 		<script type="application/ld+json">
 			{
 				"@context": "http://schema.org/",
