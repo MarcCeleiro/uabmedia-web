@@ -112,7 +112,7 @@
 					<h3 class="h4">Xarxa Audiovisual Local (XAL)</h3>
 					<p>
 						UABmèdia és una entitat membre de la XAL i, com a tal, contribueix amb l’intercanvi de continguts. La producció de l’alumnat té una oportunitat extra de difusió i visibilitat per altres mitjans locals de Catalunya, així com per als canals propis de la XAL.<br/> 
-						<a href="https://www.xal.cat/ " style="font-weight:bold; color:CadetBlue"> https://www.xal.cat/ </a>
+						<a href="https://www.xal.cat/ " style="color:CadetBlue"> https://www.xal.cat/ </a>
 					</p>
 
 					<br/>
@@ -122,7 +122,7 @@
 						UABràdio és una de les 40 emissores de ràdio universitàries associades a l’ARU. L’associació fomenta l’intercanvi de continguts i l’elaboració de programes conjunts i col·laboratius entre els equips de les diferents emissores del territori espanyol, a més de fomentar activitats de formació, projectes per a apropar la ràdio a les comunitats universitàries o el desenvolupament de nous formats sonors, entre d’altres. 
 						Entre els projectes col·laboratius de l’ARU, hi és el programa informatiu setmanal que s’emet a Radio Exterior de España (REE). 
 						<br/>
-						<a href="https://asociacionderadiosuniversitarias.com/"  style="font-weight:bold; color:CadetBlue">https://asociacionderadiosuniversitarias.com/</a>
+						<a href="https://asociacionderadiosuniversitarias.com/"  style="color:CadetBlue">https://asociacionderadiosuniversitarias.com/</a>
 
 					</p><br/>
 
@@ -154,17 +154,17 @@
 					<br/>
 
                     <h4>Direcció</h4>
-					<p>Ricardo Carniel Bugs <br/><a href="mailto:dg.c.comunicacio@uab.cat " style="font-weight:bold; color:#99BBFF">dg.c.comunicacio@uab.cat </a></p>
+					<p>Ricardo Carniel Bugs <br/><a href="mailto:dg.c.comunicacio@uab.cat " style="color:#99BBFF">dg.c.comunicacio@uab.cat </a></p>
 
                     <br/>
 
 					<h4>Coordinació</h4>
-					<p> Luisa Martínez García <br/><a href="mailto:coordinació.uabmedia@uab.cat" style="font-weight:bold; color:#99BBFF">coordinació.uabmedia@uab.cat</a></p>
+					<p> Luisa Martínez García <br/><a href="mailto:coordinació.uabmedia@uab.cat" style="color:#99BBFF">coordinació.uabmedia@uab.cat</a></p>
 
 					<br/>
 					
 					<h4>Suport TIC</h4>
-					<p>Marc Celeiro<br/><a href="mailto:Marc.Celeiro@uab.cat " style="font-weight:bold; color:#99BBFF">marc.celeiro@uab.cat </a></p>
+					<p>Marc Celeiro<br/><a href="mailto:Marc.Celeiro@uab.cat " style="color:#99BBFF">marc.celeiro@uab.cat </a></p>
 
 					<br/>
 

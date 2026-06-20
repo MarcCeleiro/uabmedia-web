@@ -46,7 +46,7 @@
  }
 
  label {
-     font-weight: normal;
+     font-weight: 400;
  }
 
  h1,
@@ -77,6 +77,12 @@
  h6,
  .h6 {
      font-size: 1.000em;
+ }
+
+ /* The Bootstrap .h1-.h6 size helpers ship font-weight:500; keep them at the
+    site's single 400 weight (these load after Bootstrap, so this wins). */
+ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+     font-weight: 400;
  }
 
  .container-fluid {

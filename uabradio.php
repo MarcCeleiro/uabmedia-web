@@ -260,7 +260,7 @@ $data_ARXIU = json_decode($response_ARXIU);
 										<?php echo $programa['hora_inici']; ?>
 										<a 
 										   href="/programa/<?php echo $programa['id']; ?>/<?php echo str_replace(' ', '-', $programa['titulo']); ?>">
-											<span class="h5" style="display:block;font-weight:700;color:#fff;"><?php echo $programa['titulo']; ?></span>
+											<span class="h5" style="display:block;color:#fff;"><?php echo $programa['titulo']; ?></span>
 										</a>						
 									</div>
 								</div>

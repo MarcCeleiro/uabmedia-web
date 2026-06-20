@@ -40,7 +40,7 @@ header .navbar ul li.menu-item a:hover {
 	font-size: 2.5em!important;
 	font-family: 'Merriweather', serif;
 	line-height: 1.2;
-	font-weight: 600;
+	font-weight: 400;
 	margin-bottom: 20px;
 	color: black!important;
 }
@@ -53,7 +53,7 @@ header .navbar ul li.menu-item a:hover {
 
 .noticia-caixa .subtitol {
 	font-size: 1.2em;
-	font-weight: normal!important;
+	font-weight: 400 !important;
 	color: black!important;
 }
 
@@ -61,7 +61,7 @@ header .navbar ul li.menu-item a:hover {
 	font-size: 1.5em!important;
 	font-family: 'Merriweather', serif;
 	line-height: 1.2;
-	font-weight: 600;
+	font-weight: 400;
 	margin: 50px 0 20px 0!important;
 	color: black!important;
 }
@@ -100,7 +100,7 @@ blockquote p {
 }
 
 blockquote cite {
-	font-weight: bold
+	font-weight: 400
 }
 
 cite a {
@@ -126,7 +126,7 @@ object {
 
 .darreres-noticies .titol-widget {
 	font-size: 1.3rem!important;
-	font-weight: 600;
+	font-weight: 400;
 	margin-bottom: 1rem;
 	padding-bottom: clamp(0.13rem,calc(0.13rem + 0vw),0.13rem);
 	border-bottom: 2px solid #fff;
