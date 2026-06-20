@@ -15,10 +15,10 @@
 		include './plantilla/header.php';
 		?>
 		<div class="container" style="padding-top:100px">
-			<h2>Política de galetes</h2>
+			<h1>Política de galetes</h1>
 			<p>A UABm&egrave;dia, fem &uacute;s de galetes per millorar l&#39;experi&egrave;ncia dels usuaris en la nostra p&agrave;gina web. Les galetes s&oacute;n petits arxius de text que s&#39;emmagatzemen en el teu dispositiu quan visites llocs web. Utilitzem aquestes galetes per diverses finalitats, com ara analitzar el nostre tr&agrave;nsit web, personalitzar continguts i anuncis, i proporcionar funcionalitats de xarxes socials.</p>
 
-			<h3>Tipus de galetes utilitzades</h3>
+			<h2>Tipus de galetes utilitzades</h2>
 
 			<p>Utilitzem tres categories principals de galetes a la nostra web, cadascuna amb un propòsit específic. Pots gestionar les teves preferències de cookies a través del nostre sistema de consentiment granular:</p>
 
@@ -27,7 +27,7 @@
 			<p><strong>Cookies d'Anàlisi:</strong> Aquestes cookies ens ajuden a entendre com els visitants interactuen amb la nostra pàgina web, proporcionant informació sobre les àrees visitades, el temps de visita i qualsevol problema trobat. Això ens ajuda a millorar el rendiment de la nostra web. Utilitzem Google Analytics per aquest propòsit, sempre que hagis donat el teu consentiment explícit.</p>
 
 			<p><strong>Cookies de Màrqueting:</strong> Aquestes cookies s'utilitzen per mostrar anuncis rellevants basats en els teus interessos i per mesurar l'eficàcia de les nostres campanyes publicitàries.</p>
-			<h4>Cookies d'Anàlisi (Google Analytics)</h4>
+			<h3>Cookies d'Anàlisi (Google Analytics)</h3>
 			<p><em>Aquestes cookies només s'utilitzen si has donat el teu consentiment explícit:</em></p>
 			<table>
 				<thead>
@@ -125,7 +125,7 @@
 					</tr>
 				</tbody>
 			</table>
-			<h3>Sistema de Consentiment</h3>
+			<h2>Sistema de Consentiment</h2>
 
 			<p>El nostre lloc web utilitza un sistema de consentiment de cookies compliant amb el RGPD que et permet:</p>
 			<ul>
@@ -136,11 +136,11 @@
 
 			<p>El teu consentiment es desa de forma segura al teu navegador i pots modificar les teves preferències en qualsevol moment fent clic al botó de configuració de cookies que apareix al peu de pàgina.</p>
 
-			<h3>Gesti&oacute; de les galetes</h3>
+			<h2>Gesti&oacute; de les galetes</h2>
 
 			<p>Tens el control total sobre l&#39;&uacute;s de galetes. Pots configurar el teu navegador per acceptar o rebutjar totes les galetes, o per rebre una notificaci&oacute; quan s&#39;envia una galeta. Tanmateix, &eacute;s important tenir en compte que algunes funcions o serveis de la nostra web poden no funcionar adequadament sense les galetes.</p>
 
-			<h3>Consentiment</h3>
+			<h2>Consentiment</h2>
 
 			<p>En utilitzar la nostra web, et demanem el teu consentiment explícit per a l'ús de cookies no necessàries. Pots triar entre:</p>
 			<ul>

@@ -44,7 +44,7 @@
    include './plantilla/header.php';
    ?>
     <div class="container" style="padding-top:100px">
-        <h4>Participa-hi</h4><br/>
+        <h1>Participa-hi</h1><br/>
         <?php echo $data->data->description ?? ''; ?>
     </div>
     <?php

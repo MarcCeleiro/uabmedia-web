@@ -68,8 +68,8 @@
             <div class="container">
                 <article>
 					<center>
-						<h2><?php echo $data->data->title; ?></h2>
-						<h5><?php echo $data->data->description_seo; ?></h5>
+						<h1><?php echo $data->data->title; ?></h1>
+						<h2 class="h5"><?php echo $data->data->description_seo; ?></h2>
 						<br/>
 						<?php echo substr($data->data->date_formatted,0,-3); ?> · Un reportatge de <strong><?php echo $data->data->user_alias; ?></strong>
 					</center>

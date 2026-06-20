@@ -4218,7 +4218,7 @@ ul.f-link li a:hover {
 	font-weight: var(--e-global-typography-primary-font-weight)
 }
 
-h3.icon-box-title>span {
+.icon-box-title>span {
 	font-size: 24px
 }
 
