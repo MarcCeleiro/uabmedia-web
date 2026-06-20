@@ -148,7 +148,6 @@ $data = json_decode($response);
 					}
 				</style>
 				<div class="um-capcalera d-flex align-items-center">
-					<h4 data-aos="fade-right" class="main-title"></h4>
 				</div>
 				<section>
 					<?php
@@ -180,7 +179,7 @@ $data = json_decode($response);
 					$data_igualtat = json_decode($response_igualtat);
 					?>
 					<div>
-						<h3 data-aos="fade-right"></h3><br />
+<br />
 
 
 						<div data-aos="zoom-in" class="row">
@@ -196,7 +195,7 @@ $data = json_decode($response);
 									</div>
 								</div>
 								<br />
-								<h6 class="titol"><a href="/noticia/<?php echo $data_igualtat->list[$i]->id; ?>/<?php echo $data_igualtat->list[$i]->title_url; ?>"><?php echo $data_igualtat->list[$i]->title; ?></a></h6>
+								<h2 class="titol h6"><a href="/noticia/<?php echo $data_igualtat->list[$i]->id; ?>/<?php echo $data_igualtat->list[$i]->title_url; ?>"><?php echo $data_igualtat->list[$i]->title; ?></a></h2>
 								<div class="capitol d-flex align-items-center my-2">
 									<span class="text-white"><?php echo substr($data_igualtat->list[$i]->date_formatted, 0, -9); ?></span>
 								</div>

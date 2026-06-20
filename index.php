@@ -169,14 +169,14 @@ $dadesClipsRecents = json_decode($respostaClipsRecents);
 										<img class="d-block w-100" src="<?php echo $dadesClipsRecents->list['0']->img_social; ?>" alt="<?php echo $dadesClipsRecents->list['0']->title; ?>">
 									</a>
 									<div class="carousel-caption d-md-block">
-										<h5>
+										<h2 class="h5">
 											<a href="/clip/<?php echo $dadesClipsRecents->list['0']->id; ?>/<?php echo $dadesClipsRecents->list['0']->title_url; ?>">
 												<?php echo $dadesClipsRecents->list['0']->title; ?>
 												<p> 
 													<?php echo substr($dadesClipsRecents->list['0']->date_formatted, 0, -9); ?>
 												</p>
 											</a>
-										</h5>
+										</h2>
 									</div>
 								</div>
 								<div class="carousel-item">
@@ -184,14 +184,14 @@ $dadesClipsRecents = json_decode($respostaClipsRecents);
 										<img class="d-block w-100" src="<?php echo $dadesClipsRecents->list['1']->img_social; ?>" alt="<?php echo $dadesClipsRecents->list['1']->title; ?>">
 									</a>
 									<div class="carousel-caption d-md-block">
-										<h5>
+										<h2 class="h5">
 											<a href="/clip/<?php echo $dadesClipsRecents->list['1']->id; ?>/<?php echo $dadesClipsRecents->list['1']->title_url; ?>">
 												<?php echo $dadesClipsRecents->list['1']->title; ?>
 												<p>
 													<?php echo substr($dadesClipsRecents->list['1']->date_formatted, 0, -9); ?>
 												</p>
 											</a>
-										</h5>
+										</h2>
 									</div>
 								</div>
 								<div class="carousel-item">
@@ -199,13 +199,13 @@ $dadesClipsRecents = json_decode($respostaClipsRecents);
 										<img class="d-block w-100" src="<?php echo $dadesClipsRecents->list['2']->img_social; ?>" alt="<?php echo $dadesClipsRecents->list['2']->title; ?>">
 									</a>
 									<div class="carousel-caption d-md-block">
-										<h5>
+										<h2 class="h5">
 											<a href="/clip/<?php echo $dadesClipsRecents->list['2']->id; ?>/<?php echo $dadesClipsRecents->list['2']->title_url; ?>"><?php echo $dadesClipsRecents->list['2']->title; ?>
 												<p>
 													<?php echo substr($dadesClipsRecents->list['2']->date_formatted, 0, -9); ?>
 												</p>
 											</a>
-										</h5>
+										</h2>
 									</div>
 								</div>
 								<div class="carousel-item">
@@ -213,13 +213,13 @@ $dadesClipsRecents = json_decode($respostaClipsRecents);
 										<img class="d-block w-100" src="<?php echo $dadesClipsRecents->list['3']->img_social; ?>" alt="<?php echo $dadesClipsRecents->list['3']->title; ?>">
 									</a>
 									<div class="carousel-caption d-md-block">
-										<h5>
+										<h2 class="h5">
 											<a href="/clip/<?php echo $dadesClipsRecents->list['3']->id; ?>/<?php echo $dadesClipsRecents->list['3']->title_url; ?>"><?php echo $dadesClipsRecents->list['3']->title; ?>
 												<p>
 													<?php echo substr($dadesClipsRecents->list['3']->date_formatted, 0, -9); ?>
 												</p>
 											</a>
-										</h5>
+										</h2>
 									</div>
 								</div>
 								<div class="carousel-item">
@@ -227,13 +227,13 @@ $dadesClipsRecents = json_decode($respostaClipsRecents);
 										<img class="d-block w-100" src="<?php echo $dadesClipsRecents->list['4']->img_social; ?>" alt="<?php echo $dadesClipsRecents->list['4']->title; ?>">
 									</a>
 									<div class="carousel-caption d-md-block">
-										<h5>
+										<h2 class="h5">
 											<a href="/clip/<?php echo $dadesClipsRecents->list['4']->id; ?>/<?php echo $dadesClipsRecents->list['4']->title_url; ?>"><?php echo $dadesClipsRecents->list['4']->title; ?>
 												<p>
 													<?php echo substr($dadesClipsRecents->list['4']->date_formatted, 0, -9); ?>
 												</p>
 											</a>
-										</h5>
+										</h2>
 									</div>
 								</div>
 							</div>
@@ -262,7 +262,7 @@ $dadesClipsRecents = json_decode($respostaClipsRecents);
 			</section>
 
 			<section id="actualitat" style="margin-bottom:40px">
-				<a href="https://uab.media/actualitat"><h3 class="titol-seccio">Actualitat</h3></a>
+				<a href="https://uab.media/actualitat"><h2 class="titol-seccio h3">Actualitat</h2></a>
 				<div class="row gx-4 actualitat-row">
 					<?php
 					// Compare the newest featured clip (category 44) with the newest
@@ -277,7 +277,7 @@ $dadesClipsRecents = json_decode($respostaClipsRecents);
 						 src="<?php echo $dadesNoticies->list['0']->img_social; ?>"
 						 style="max-width:100%; height:auto;">
 					<div class="contingut-noticia col-12 col-md-6">
-						<h2 class="titol"><?php echo $dadesNoticies->list['0']->title; ?></h2>
+						<h3 class="titol"><?php echo $dadesNoticies->list['0']->title; ?></h3>
 						<p class="subtitol"><?php echo $dadesNoticies->list['0']->description_seo; ?></p>
 						<p class="data"><?php echo substr($dadesNoticies->list['0']->date_formatted, 0, -9); ?></p>
 					</div>
@@ -286,7 +286,7 @@ $dadesClipsRecents = json_decode($respostaClipsRecents);
 					<a class="col-12 col-md noticia-gran" style="min-height: 600px" href="/noticia/<?php echo $dadesClips->list['0']->id; ?>/<?php echo $dadesClips->list['0']->title_url; ?>">
 						<img class="imatge-destacada" src="<?php echo $dadesClips->list['0']->img_social; ?>">
 						<div class="contingut-noticia">
-							<h2 class="titol"><?php echo $dadesClips->list['0']->title; ?></h2>
+							<h3 class="titol"><?php echo $dadesClips->list['0']->title; ?></h3>
 							<p class="subtitol"><?php echo $dadesClips->list['0']->description_seo; ?></p>
 							<p class="data"><?php echo substr($dadesClips->list['0']->date_formatted, 0, -9); ?></p>
 						</div>
@@ -305,7 +305,7 @@ $dadesClipsRecents = json_decode($respostaClipsRecents);
 					</a>
 					<?php $i++;} ?>
 				</div>
-				<a href="https://uab.media/actualitat"><h3 class="titol-seccio">Més notícies</h3></a>
+				<a href="https://uab.media/actualitat"><h2 class="titol-seccio h3">Més notícies</h2></a>
 			</section>
 		</div>
 

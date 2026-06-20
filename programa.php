@@ -163,10 +163,10 @@ $data_clips = json_decode($response_clips);
 									</a>
 								</div>
 								<div class="block-description">
-									<h6 class="titol">
+									<h3 class="titol h6">
 										<a href="/clip/<?php echo htmlspecialchars(trim($data_clips->list[$i]->id));?>/<?php echo htmlspecialchars(trim($data_clips->list[$i]->title_url));?>"><?php echo htmlspecialchars(trim($data_clips->list[$i]->title)); ?>
 										</a>
-									</h6>
+									</h3>
 									<div class="capitol d-flex align-items-center my-2">
 										<span class="text-white"><?php echo substr(htmlspecialchars(trim($data_clips->list[$i]->date_formatted)), 0, -9); ?></span>
 									</div>

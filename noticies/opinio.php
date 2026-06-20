@@ -144,62 +144,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 				<div class="container-fluid">
 					<div class="row">
 						<div class="col-sm-12 overflow-hidden">
-							<!--<div class="um-capcalera d-flex align-items-center">
-								<img style="margin-right:30px;width:80px;border-radius: 50%;" src="<?php echo $data->data->img_social; ?>" alt="<?php echo $data->data->title; ?>">
-								<h1 style="font-size:2.2em!important;line-height: 0.9!important"><?php echo $data->data->title; ?><br><span style="font-size:14px!important;line-height: 0.9!important"><?php echo $data->data->description_seo; ?></span></h1>
-							</div>-->
-							<!--<section id="noticies">
-				<?php
-				include(dirname(__DIR__).'/config.php');
-				$GET_VARS_NEWS = array(
-					"go"        => "news",
-					"do"        => "list"
-				);
-
-				$POST_VARS_NEWS = array(
-					"statusFilter" => 1,
-					"categoriesFilter" => $data->data->id,
-					"resultsPerPageFilter" => 4
-				);
-
-				$REQUEST_URL_NEWS = $API_URL . "?" . http_build_query($GET_VARS) . "&" . http_build_query($GET_VARS_NEWS);
-
-				$ch_NEWS = curl_init();
-				curl_setopt($ch_NEWS, CURLOPT_URL, $REQUEST_URL_NEWS);
-				curl_setopt($ch_NEWS, CURLOPT_POST, true);
-				curl_setopt($ch_NEWS, CURLOPT_RETURNTRANSFER, true);
-				curl_setopt($ch_NEWS, CURLOPT_HEADER, false);
-				curl_setopt($ch_NEWS, CURLOPT_POSTFIELDS, $POST_VARS_NEWS);
-
-				$response_NEWS = curl_exec($ch_NEWS);
-
-				$data_NEWS = json_decode($response_NEWS);
-				?>
-				<div class="um-capcalera d-flex align-items-center">
-							<h4 class="main-title">Notícies</h4>
-						</div>
-				<div class="row">
-					<?php
-                    $j = 0;
-                    while ($j < 4) {
-                    ?>
-					<div class="col-12 col-md">
-						<div class="block-images position-relative">
-							<div class="img-noticia noticia_flex" style="background-image:url(<?php echo $data_NEWS->list['0']->img_social; ?>)">
-							</div>
-						</div><br/>
-						<h6 class="titol"><a href="/noticia/<?php echo $data_NEWS->list['0']->id; ?>/<?php echo $data_NEWS->list['0']->title_url; ?>"><?php echo $data_NEWS->list['0']->title; ?></a></h6>
-						<div class="capitol d-flex align-items-center my-2">
-							<span class="text-white"><?php echo substr($data_NEWS->list['0']->date_formatted, 0, -9); ?></span>
-						</div>
-						<br /><br />
-					</div>
-					<?php
-                        $j++;
-                    }
-                    ?>
-				</div>
-			</section>-->
 							<?php
 							include(dirname(__DIR__).'/config.php');
 							$GET_VARS3 = array(
@@ -280,7 +224,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               </div>
             </div>
             <br/>
-            <h6 class="titol"><a href="/noticia/<?php echo $data_uab->list[$i]->id; ?>/<?php echo $data_uab->list[$i]->title_url; ?>"><?php echo $data_uab->list[$i]->title; ?></a></h6>
+            <h2 class="titol h6"><a href="/noticia/<?php echo $data_uab->list[$i]->id; ?>/<?php echo $data_uab->list[$i]->title_url; ?>"><?php echo $data_uab->list[$i]->title; ?></a></h2>
             <div class="capitol d-flex align-items-center my-2">
               <span class="text-white"><?php echo substr($data_uab->list[$i]->date_formatted, 0, -9); ?>	</span>
             </div>

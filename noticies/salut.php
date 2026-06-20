@@ -170,7 +170,6 @@ $data = json_decode($response);
 					}
 				</style>
 				<div class="um-capcalera d-flex align-items-center">
-					<h4 data-aos="fade-right" class="main-title"></h4>
 				</div>
 
 				<section>
@@ -202,7 +201,7 @@ $data = json_decode($response);
 					$data_salut = json_decode($response_salut);
 					?>
 					<div>
-						<a href="noticies/salut.php"><h3 data-aos="fade-right"></h3></a><br />
+						<a href="noticies/salut.php"></a><br />
 						<div data-aos="zoom-in" class="row">
 
 							<?php
@@ -215,7 +214,7 @@ $data = json_decode($response);
 									</div>
 								</div>
 								<br />
-								<h6 class="titol"><a href="/noticia/<?php echo $data_salut->list[$i]->id; ?>/<?php echo $data_salut->list[$i]->title_url; ?>"><?php echo $data_salut->list[$i]->title; ?></a></h6>
+								<h2 class="titol h6"><a href="/noticia/<?php echo $data_salut->list[$i]->id; ?>/<?php echo $data_salut->list[$i]->title_url; ?>"><?php echo $data_salut->list[$i]->title; ?></a></h2>
 								<div class="capitol d-flex align-items-center my-2">
 									<span class="text-white"><?php echo substr($data_salut->list[$i]->date_formatted, 0, -9); ?></span>
 								</div>

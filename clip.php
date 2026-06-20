@@ -178,13 +178,13 @@ $data = json_decode($response);
 							 src="<?php echo $data_usuari->data->img_social; ?>" 
 							 alt="<?php echo $data->categories['0']->title; ?>"
 							 >
-						<h6>
+						<h2 class="h6">
 							<strong><?php echo $data->categories['0']->title; ?></strong>
 							<br/>
 							<div style="color:#d1d0cf!important;font-size:10pt!important">
 								Publicat el <?php echo substr($data->data->date_formatted,0,-9); ?>
 							</div>
-						</h6>
+						</h2>
 					</div>
 					<p><?php echo $data->data->description; ?></p>
 				</div>

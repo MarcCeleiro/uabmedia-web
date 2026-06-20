@@ -74,9 +74,9 @@
 								<img src="<?php echo $data->list[$i]->img_social; ?>" class="img-fluid" alt="<?php echo $data->list[$i]->title; ?>">
 							</div>
 							<div class="block-description">
-								<h6 class="titol">
+								<h3 class="titol h6">
 									<a href="/clip/<?php echo $data->list[$i]->id; ?>/<?php echo $data->list[$i]->title_url; ?>"><?php echo $data->list[$i]->title; ?></a>
-								</h6>
+								</h3>
 								<div class="capitol d-flex align-items-center my-2">
 									<div class="badge badge-programa p-1 mr-2">
 										<?php echo $data->list[$i]->user_alias; ?>
@@ -127,9 +127,9 @@
 								<img src="<?php echo $data_news->list[$inews]->img_social; ?>" class="img-fluid" alt="<?php echo $data_news->list[$inews]->title; ?>">
 							</div>
 							<div class="block-description">
-								<h6 class="titol">
+								<h3 class="titol h6">
 									<a href="/noticia/<?php echo $data_news->list[$inews]->id; ?>/<?php echo $data_news->list[$inews]->title_url; ?>"><?php echo $data_news->list[$inews]->title; ?></a>
-								</h6>
+								</h3>
 								<div class="capitol d-flex align-items-center my-2">
 									<span class="text-white">
 										<?php echo substr($data_news->list[$inews]->date_formatted, 0, -9); ?>

@@ -141,10 +141,6 @@ $data = json_decode($response);
 			<div>
 				<div class="row">
 					<div class="col-sm-12 overflow-hidden">
-						<!--<div class="um-capcalera d-flex align-items-center">
-		<img style="margin-right:30px;width:80px;border-radius: 50%;" src="<?php echo $data->data->img_social; ?>" alt="<?php echo $data->data->title; ?>">
-		<h1 style="font-size:2.2em!important;line-height: 0.9!important"><?php echo $data->data->title; ?><br><span style="font-size:14px!important;line-height: 0.9!important"><?php echo $data->data->description_seo; ?></span></h1>
-	   </div>-->
 						<style>
 							.programa_box h6{
 								width: 80%;
@@ -200,7 +196,7 @@ $data = json_decode($response);
 											</div>
 										</div>
 										<br />
-										<h6 class="titol"><a href="/noticia/<?php echo $data_societat->list[$i]->id; ?>/<?php echo $data_societat->list[$i]->title_url; ?>"><?php echo $data_societat->list[$i]->title; ?></a></h6>
+										<h2 class="titol h6"><a href="/noticia/<?php echo $data_societat->list[$i]->id; ?>/<?php echo $data_societat->list[$i]->title_url; ?>"><?php echo $data_societat->list[$i]->title; ?></a></h2>
 										<div class="capitol d-flex align-items-center my-2">
 											<span class="text-white"><?php echo substr($data_societat->list[$i]->date_formatted, 0, -9); ?></span>
 										</div>

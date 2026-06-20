@@ -117,7 +117,7 @@ $data = json_decode($response);
 							<br/>
                             <div class="um-capcalera d-flex align-items-center">
                                 <img style="margin-right:20px;width:40px;border-radius: 50%;" src="<?php echo $data_usuari->data->img_social; ?>" alt="<?php echo $data->categories['0']->title; ?>">
-								<h6><strong><?php echo $data->categories['0']->title; ?></strong><br/><div style="color:#d1d0cf!important;font-size:10pt!important">Publicat el <?php echo substr($data->data->date_formatted,0,-9); ?></div></h6>
+								<h2 class="h6"><strong><?php echo $data->categories['0']->title; ?></strong><br/><div style="color:#d1d0cf!important;font-size:10pt!important">Publicat el <?php echo substr($data->data->date_formatted,0,-9); ?></div></h2>
                             </div>
 							<p><?php echo $data->data->description; ?></p>
 						</div>
@@ -159,7 +159,7 @@ $data = json_decode($response);
 					<div class="row">
 						<div class="col-sm-12 overflow-hidden">
 							<div class="um-capcalera d-flex">
-								<h4 class="main-title">Continguts relacionats</h4>
+								<h2 class="main-title h4">Continguts relacionats</h2>
 							</div>
 							<div class="continguts-pre">
 								<ul class="favorites-slider list-inline  row p-0 mb-0">
@@ -169,7 +169,7 @@ $data = json_decode($response);
 												<img src="<?php echo $data3->list['0']->img_social; ?>" class="img-fluid">
 											</div>
 											<div class="block-description" onclick="location.href='./clip/<?php echo $data3->list['0']->id; ?>/<?php echo $data3->list['0']->title_url; ?>'">
-												<h6 class="titol"><a href="/clip/<?php echo $data3->list['0']->id; ?>/<?php echo $data3->list['0']->title_url; ?>"><?php echo $data3->list['0']->title; ?></a></h6>
+												<h3 class="titol h6"><a href="/clip/<?php echo $data3->list['0']->id; ?>/<?php echo $data3->list['0']->title_url; ?>"><?php echo $data3->list['0']->title; ?></a></h3>
 												<div class="capitol d-flex align-items-center my-2">
 													<span class="text-white"><?php echo $data3->list['0']->date_formatted; ?></span>
 												</div>
@@ -182,7 +182,7 @@ $data = json_decode($response);
 												<img src="<?php echo $data3->list['1']->img_social; ?>" class="img-fluid">
 											</div>
 											<div class=" block-description" onclick="location.href='./clip/<?php echo $data3->list['1']->id; ?>/<?php echo $data3->list['1']->title_url; ?>'">
-												<h6 class="titol"><a href="/clip/<?php echo $data3->list['1']->id; ?>/<?php echo $data3->list['1']->title_url; ?>"><?php echo $data3->list['1']->title; ?></a></h6>
+												<h3 class="titol h6"><a href="/clip/<?php echo $data3->list['1']->id; ?>/<?php echo $data3->list['1']->title_url; ?>"><?php echo $data3->list['1']->title; ?></a></h3>
 												<div class="capitol d-flex align-items-center my-2">
 													<span class="text-white"><?php echo $data3->list['1']->date_formatted; ?></span>
 												</div>
@@ -195,7 +195,7 @@ $data = json_decode($response);
 												<img src="<?php echo $data3->list['2']->img_social; ?>" class="img-fluid">
 											</div>
 											<div class="block-description" onclick="location.href='./clip/<?php echo $data3->list['2']->id; ?>/<?php echo $data3->list['2']->title_url; ?>'">
-												<h6 class="titol"><a href="/clip/<?php echo $data3->list['2']->id; ?>/<?php echo $data3->list['2']->title_url; ?>"><?php echo $data3->list['2']->title; ?></a></h6>
+												<h3 class="titol h6"><a href="/clip/<?php echo $data3->list['2']->id; ?>/<?php echo $data3->list['2']->title_url; ?>"><?php echo $data3->list['2']->title; ?></a></h3>
 												<div class="capitol d-flex align-items-center my-2">
 													<span class="text-white"><?php echo $data3->list['2']->date_formatted; ?></span>
 												</div>
@@ -208,7 +208,7 @@ $data = json_decode($response);
 												<img src="<?php echo $data3->list['3']->img_social; ?>" class="img-fluid">
 											</div>
 											<div class="block-description" onclick="location.href='./clip/<?php echo $data3->list['3']->id; ?>/<?php echo $data3->list['3']->title_url; ?>'">
-												<h6 class="titol"><a href="/clip/<?php echo $data3->list['3']->id; ?>/<?php echo $data3->list['3']->title_url; ?>"><?php echo $data3->list['3']->title; ?></a></h6>
+												<h3 class="titol h6"><a href="/clip/<?php echo $data3->list['3']->id; ?>/<?php echo $data3->list['3']->title_url; ?>"><?php echo $data3->list['3']->title; ?></a></h3>
 												<div class="capitol d-flex align-items-center my-2">
 													<span class="text-white"><?php echo $data3->list['3']->date_formatted; ?></span>
 												</div>

@@ -260,7 +260,7 @@ $data_ARXIU = json_decode($response_ARXIU);
 										<?php echo $programa['hora_inici']; ?>
 										<a 
 										   href="/programa/<?php echo $programa['id']; ?>/<?php echo str_replace(' ', '-', $programa['titulo']); ?>">
-											<h5><?php echo $programa['titulo']; ?></h5>
+											<span class="h5" style="display:block;font-weight:700;color:#fff;"><?php echo $programa['titulo']; ?></span>
 										</a>						
 									</div>
 								</div>
@@ -283,13 +283,13 @@ $data_ARXIU = json_decode($response_ARXIU);
 											 alt="<?php echo $data_carrousel->list['0']->title; ?>">
 									</a>
 									<div class="carousel-caption d-md-block">
-										<h5>
+										<h2 class="h5">
 											<a href="/clip/<?php echo $data_carrousel->list['0']->id; ?>/<?php echo $data_carrousel->list['0']->title_url; ?>"><?php echo $data_carrousel->list['0']->title;?>
 												<p> 
 													<?php echo substr($data_carrousel->list['0']->date_formatted, 0, -9); ?>
 												</p>
 											</a>
-										</h5>
+										</h2>
 									</div>
 								</div>
 
@@ -302,13 +302,13 @@ $data_ARXIU = json_decode($response_ARXIU);
 											 alt="<?php echo $data_carrousel->list['1']->title; ?>">
 									</a>
 									<div class="carousel-caption d-md-block">
-										<h5>
+										<h2 class="h5">
 											<a href="/clip/<?php echo $data_carrousel->list['1']->id; ?>/<?php echo $data_carrousel->list['1']->title_url; ?>"><?php echo $data_carrousel->list['1']->title; ?>
 												<p>
 													<?php echo substr($data_carrousel->list['1']->date_formatted, 0, -9); ?>
 												</p>
 											</a>
-										</h5>
+										</h2>
 									</div>
 								</div>
 
@@ -321,13 +321,13 @@ $data_ARXIU = json_decode($response_ARXIU);
 											 alt="<?php echo $data_carrousel->list['2']->title; ?>">
 									</a>
 									<div class="carousel-caption d-md-block">
-										<h5>
+										<h2 class="h5">
 											<a href="/clip/<?php echo $data_carrousel->list['2']->id; ?>/<?php echo $data_carrousel->list['2']->title_url; ?>"><?php echo $data_carrousel->list['2']->title; ?>
 												<p>
 													<?php echo substr($data_carrousel->list['2']->date_formatted, 0, -9); ?>
 												</p>
 											</a>
-										</h5>
+										</h2>
 									</div>
 								</div>
 
@@ -340,13 +340,13 @@ $data_ARXIU = json_decode($response_ARXIU);
 											 alt="<?php echo $data_carrousel->list['3']->title; ?>">
 									</a>
 									<div class="carousel-caption d-md-block">
-										<h5>
+										<h2 class="h5">
 											<a href="/clip/<?php echo $data_carrousel->list['3']->id; ?>/<?php echo $data_carrousel->list['3']->title_url; ?>"><?php echo $data_carrousel->list['3']->title; ?>
 												<p>
 													<?php echo substr($data_carrousel->list['3']->date_formatted, 0, -9); ?>
 												</p>
 											</a>
-										</h5>
+										</h2>
 									</div> 
 								</div>
 							</div>

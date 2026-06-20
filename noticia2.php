@@ -110,7 +110,7 @@ $data = json_decode($response);
 					<div class="col-lg-4 col-sm-12">
 						<div class="widget-area" aria-label="Barra lateral">
 							<div class="um-widget-menu darreres-noticies">
-								<h5 class="titol-widget">Darreres notícies</h5>
+								<h2 class="titol-widget">Darreres notícies</h2>
 								<?php
 								include 'config.php';
 								$GET_VARS3 = array(
