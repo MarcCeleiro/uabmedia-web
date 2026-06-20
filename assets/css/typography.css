@@ -1,5 +1,3 @@
-@import url("remixicon.css");
-
  *::-moz-selection {
      background: var(--primari);
      color: var(--blanc);
@@ -472,7 +470,6 @@
  .select2-container--bootstrap4 .select2-selection--single .select2-selection__arrow b:before {
      content: '\ea41';
      position: absolute;
-     font-family: "remixicon";
      top: 50%;
      transform: translateY(-50%);
      right: 1px;
