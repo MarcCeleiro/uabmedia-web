@@ -28,16 +28,16 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta http-equiv="X-UA-Compatible" content="ie=edge">
-		<title>Qui som? – UABmèdia</title>
+		<title>Avís Legal – UABmèdia</title>
 		<meta name="theme-color" content="#141414">
 		<meta name="description" content="UABmèdia és una plataforma d’articulació de continguts interactius que elabora l’alumnat de forma homologable als que produeixen altres mitjans.">
 		<meta name="twitter:card" content="summary">
 		<meta name="twitter:site" content="@uabmedia">
-		<meta name="twitter:title" content="Qui som? - UABmèdia">
+		<meta name="twitter:title" content="Avís Legal - UABmèdia">
 		<meta name="twitter:description" content="UABmèdia és una plataforma d’articulació de continguts interactius que elabora l’alumnat de forma homologable als que produeixen altres mitjans.">
 		<meta name="twitter:image:src" content="https://uab.media/assets/images/uabmedia_twitter.jpeg">
 		<meta property="og:site_name" content="UABmèdia" />
-		<meta property="og:title" content="Qui som? - UABmèdia" />
+		<meta property="og:title" content="Avís Legal - UABmèdia" />
 		<meta property="og:description" content="UABmèdia és una plataforma d’articulació de continguts interactius que elabora l’alumnat de forma homologable als que produeixen altres mitjans." />
 		<meta property="og:image" content="https://uab.media/assets/images/uabmedia_twitter.jpeg" />
 		<link rel="shortcut icon" href="https://uab.media/assets/images/favicon.png" />
@@ -56,8 +56,8 @@
   <?php
    include './plantilla/header.php';
    ?>
-    <div class="container" style="padding-top:100px">
-        <h1>Avís Legal</h1><br/>
+    <div class="container" style="padding-top:40px">
+        <h1 class="titol-pagina">Avís Legal</h1><br/>
         <?php echo $data->data->description ?? ''; ?>
     </div>
     <?php

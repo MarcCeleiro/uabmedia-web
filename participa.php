@@ -43,8 +43,8 @@
   <?php
    include './plantilla/header.php';
    ?>
-    <div class="container" style="padding-top:100px">
-        <h1>Participa-hi</h1><br/>
+    <div class="container" style="padding-top:40px">
+        <h1 class="titol-pagina">Participa-hi</h1><br/>
         <?php echo $data->data->description ?? ''; ?>
     </div>
     <?php
