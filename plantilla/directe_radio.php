@@ -1,43 +1,69 @@
 <?php
 include 'config.php'; // Inclou la configuració, per exemple, la variable $API_URL
 
-// Llegeix el fitxer JSON de la graella
+// Llegeix el fitxer JSON de la graella setmanal
 $programacio_setmanal = json_decode(file_get_contents('graella.json'), true);
-$detalls_programa = [];
+$detalls_programa = null;
 
-foreach ($programacio_setmanal as $dia => $programes) {
-	foreach ($programes as $programa) {
-		$GET_VARS_PROG = array(
-			"go" => "categories",
-			"do" => "get",
-			"iq" => $programa['id']
-		);
+/*
+ * Els detalls de cada programa (títol i pòster) gairebé no canvien, però la
+ * graella conté ~35 entrades setmanals. Resoldre-les a cada càrrega suposava
+ * ~35 crides síncrones a l'API de Staff/WebTV per visita. Les cachem en disc
+ * amb una validesa d'1 hora i invalidant-les si graella.json canvia, de manera
+ * que l'API només rep aquestes peticions un cop per hora.
+ */
+$cacheDir  = 'cache';
+$cacheFile = $cacheDir . '/graella_detalls.json';
+$cacheTtl  = 3600; // segons
 
-		// Construeix la URL de la sol·licitud a l'API per obtenir els detalls del programa
-		$REQUEST_URL_PROG = $API_URL . "?" . http_build_query($GET_VARS) . "&" . http_build_query($GET_VARS_PROG);
-		$ch_PROG = curl_init();
-		curl_setopt($ch_PROG, CURLOPT_URL, $REQUEST_URL_PROG);
-		curl_setopt($ch_PROG, CURLOPT_RETURNTRANSFER, true);
-		curl_setopt($ch_PROG, CURLOPT_HEADER, false);
+if (
+	is_file($cacheFile)
+	&& (time() - filemtime($cacheFile) < $cacheTtl)
+	&& filemtime($cacheFile) >= filemtime('graella.json')
+) {
+	$cached = json_decode(file_get_contents($cacheFile), true);
+	if (is_array($cached)) {
+		$detalls_programa = $cached;
+	}
+}
 
-		$response_PROG = curl_exec($ch_PROG);
-		if (curl_errno($ch_PROG)) {
-			echo 'Error en cURL: ' . curl_error($ch_PROG);
-		}
+if ($detalls_programa === null) {
+	$detalls_programa = [];
 
-		$dades_programa = json_decode($response_PROG, true);
-		curl_close($ch_PROG);
+	foreach ($programacio_setmanal as $dia => $programes) {
+		foreach ($programes as $programa) {
+			$GET_VARS_PROG = array(
+				"go" => "categories",
+				"do" => "get",
+				"iq" => $programa['id']
+			);
 
-		// Si l'API retorna informació vàlida, emmagatzema els detalls del programa
-		if (isset($dades_programa['data'])) {
-			$detalls_programa[$dia][] = [
-				'id' => $programa['id'],
-				'hora_inici' => $programa['hora_inici'],
-				'titol' => $dades_programa['data']['title'],
-				'img_poster' => $dades_programa['data']['img_poster']
-			];
+			// Construeix la URL de la sol·licitud a l'API per obtenir els detalls del programa
+			$REQUEST_URL_PROG = $API_URL . "?" . http_build_query($GET_VARS) . "&" . http_build_query($GET_VARS_PROG);
+			$ch_PROG = curl_init();
+			curl_setopt($ch_PROG, CURLOPT_URL, $REQUEST_URL_PROG);
+			curl_setopt($ch_PROG, CURLOPT_RETURNTRANSFER, true);
+			curl_setopt($ch_PROG, CURLOPT_HEADER, false);
+
+			$response_PROG = curl_exec($ch_PROG);
+			$dades_programa = json_decode($response_PROG, true);
+
+			// Si l'API retorna informació vàlida, emmagatzema els detalls del programa
+			if (isset($dades_programa['data'])) {
+				$detalls_programa[$dia][] = [
+					'id' => $programa['id'],
+					'hora_inici' => $programa['hora_inici'],
+					'titol' => $dades_programa['data']['title'],
+					'img_poster' => $dades_programa['data']['img_poster']
+				];
+			}
 		}
 	}
+
+	if (!is_dir($cacheDir)) {
+		@mkdir($cacheDir, 0775, true);
+	}
+	@file_put_contents($cacheFile, json_encode($detalls_programa), LOCK_EX);
 }
 
 // Codifica en JSON els detalls dels programes per ser utilitzats en JavaScript
