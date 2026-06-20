@@ -73,7 +73,7 @@ $data = json_decode($response);
 	<?php
 	include './plantilla/header.php';
 	?>
-	<div id="reproductor" class="video-container">
+	<div id="reproductor" class="contenidor-video">
 		<?php echo $data->media['0']->embed_html5; ?>
 		<video class="video-js vjs-big-play-centered" controls preload="auto" height="500" poster="<?php echo $data->data->img_poster; ?>" data-setup='{"fluid": true}'>
 			<source src="<?php echo $data->media['0']->vod_html5_h264; ?>" />
@@ -84,11 +84,11 @@ $data = json_decode($response);
 	</div>
 	<div class="container">
 		<div class="contingut movi">
-			<section class="movie-detail container-fluid">
+			<section class="detall-video container-fluid">
 				<div class="row">
 					<div class="col-lg-12">
-						<div class="trending-info g-border">
-							<h1 class="trending-text big-title text-uppercase mt-0">
+						<div class="info-destacat g-border">
+							<h1 class="titol-destacat titol-gran text-uppercase mt-0">
 								<?php echo $data->data->title; ?>
 							</h1>
                             <?php
@@ -159,16 +159,16 @@ $data = json_decode($response);
 					<div class="row">
 						<div class="col-sm-12 overflow-hidden">
 							<div class="um-capcalera d-flex">
-								<h2 class="main-title h4">Continguts relacionats</h2>
+								<h2 class="titol-principal h4">Continguts relacionats</h2>
 							</div>
 							<div class="continguts-pre">
 								<ul class="favorites-slider list-inline  row p-0 mb-0">
-									<li class="slide-item">
-										<div class="block-images position-relative">
+									<li class="targeta">
+										<div class="bloc-imatges position-relative">
 											<div class="img-box">
 												<img src="<?php echo $data3->list['0']->img_social; ?>" class="img-fluid">
 											</div>
-											<div class="block-description" onclick="location.href='./clip/<?php echo $data3->list['0']->id; ?>/<?php echo $data3->list['0']->title_url; ?>'">
+											<div class="bloc-descripcio" onclick="location.href='./clip/<?php echo $data3->list['0']->id; ?>/<?php echo $data3->list['0']->title_url; ?>'">
 												<h3 class="titol h6"><a href="/clip/<?php echo $data3->list['0']->id; ?>/<?php echo $data3->list['0']->title_url; ?>"><?php echo $data3->list['0']->title; ?></a></h3>
 												<div class="capitol d-flex align-items-center my-2">
 													<span class="text-white"><?php echo $data3->list['0']->date_formatted; ?></span>
@@ -176,12 +176,12 @@ $data = json_decode($response);
 											</div>
 										</div>
 									</li>
-									<li class="slide-item">
-										<div class="block-images position-relative">
+									<li class="targeta">
+										<div class="bloc-imatges position-relative">
 											<div class="img-box">
 												<img src="<?php echo $data3->list['1']->img_social; ?>" class="img-fluid">
 											</div>
-											<div class=" block-description" onclick="location.href='./clip/<?php echo $data3->list['1']->id; ?>/<?php echo $data3->list['1']->title_url; ?>'">
+											<div class=" bloc-descripcio" onclick="location.href='./clip/<?php echo $data3->list['1']->id; ?>/<?php echo $data3->list['1']->title_url; ?>'">
 												<h3 class="titol h6"><a href="/clip/<?php echo $data3->list['1']->id; ?>/<?php echo $data3->list['1']->title_url; ?>"><?php echo $data3->list['1']->title; ?></a></h3>
 												<div class="capitol d-flex align-items-center my-2">
 													<span class="text-white"><?php echo $data3->list['1']->date_formatted; ?></span>
@@ -189,12 +189,12 @@ $data = json_decode($response);
 											</div>
 										</div>
 									</li>
-									<li class="slide-item">
-										<div class="block-images position-relative">
+									<li class="targeta">
+										<div class="bloc-imatges position-relative">
 											<div class="img-box">
 												<img src="<?php echo $data3->list['2']->img_social; ?>" class="img-fluid">
 											</div>
-											<div class="block-description" onclick="location.href='./clip/<?php echo $data3->list['2']->id; ?>/<?php echo $data3->list['2']->title_url; ?>'">
+											<div class="bloc-descripcio" onclick="location.href='./clip/<?php echo $data3->list['2']->id; ?>/<?php echo $data3->list['2']->title_url; ?>'">
 												<h3 class="titol h6"><a href="/clip/<?php echo $data3->list['2']->id; ?>/<?php echo $data3->list['2']->title_url; ?>"><?php echo $data3->list['2']->title; ?></a></h3>
 												<div class="capitol d-flex align-items-center my-2">
 													<span class="text-white"><?php echo $data3->list['2']->date_formatted; ?></span>
@@ -202,12 +202,12 @@ $data = json_decode($response);
 											</div>
 										</div>
 									</li>
-									<li class="slide-item">
-										<div class="block-images position-relative">
+									<li class="targeta">
+										<div class="bloc-imatges position-relative">
 											<div class="img-box">
 												<img src="<?php echo $data3->list['3']->img_social; ?>" class="img-fluid">
 											</div>
-											<div class="block-description" onclick="location.href='./clip/<?php echo $data3->list['3']->id; ?>/<?php echo $data3->list['3']->title_url; ?>'">
+											<div class="bloc-descripcio" onclick="location.href='./clip/<?php echo $data3->list['3']->id; ?>/<?php echo $data3->list['3']->title_url; ?>'">
 												<h3 class="titol h6"><a href="/clip/<?php echo $data3->list['3']->id; ?>/<?php echo $data3->list['3']->title_url; ?>"><?php echo $data3->list['3']->title; ?></a></h3>
 												<div class="capitol d-flex align-items-center my-2">
 													<span class="text-white"><?php echo $data3->list['3']->date_formatted; ?></span>

@@ -247,7 +247,7 @@ $dadesClipsRecents = json_decode($respostaClipsRecents);
 							</a>
 						</div>
 					</div>
-					<div class="col-sm-4 col-12 justify-content-left hide-mobile">
+					<div class="col-sm-4 col-12 justify-content-left amaga-mobil">
 						<div class="bloc-inici">
 							<img width="230" src="https://uab.media/assets/images/logo-uabmedia.png" alt="UABmèdia">
 							<br/><br/>

@@ -62,7 +62,7 @@ $data = json_decode($response);
 		<link rel="stylesheet" href="https://uab.media/assets/css/style.css" />
 		<link rel="stylesheet" href="https://uab.media/assets/css/responsive.css" />
 		<style>
-			.slide-item {
+			.targeta {
 				padding: 0px 0px !important;
 			}
 		</style>
@@ -85,16 +85,16 @@ $data = json_decode($response);
 			<div class="container">
 				<section id="header">
 					<div class="row">
-						<div class="col-12 overflow-hidden hide-mobile">
+						<div class="col-12 overflow-hidden amaga-mobil">
 							<div class="um-capcalera d-flex align-items-center">
-								<h1 class="main-title titol-capcelera" style="font-size: 2.369em;line-height: 0.8!important">Notícies de salut</h1>
+								<h1 class="titol-principal titol-capcelera" style="font-size: 2.369em;line-height: 0.8!important">Notícies de salut</h1>
 							</div>
 						</div>
 						<section> 
 							<div class="container">
 								<div class="row">
 									<div class="col-0"></div>
-									<div class="col-4 hide-mobile" style="margin-bottom: 2%;padding-left:0!important;" >
+									<div class="col-4 amaga-mobil" style="margin-bottom: 2%;padding-left:0!important;" >
 										<nav class="navbar navbar-expand-lg text-light">
 											<!--<a class="navbar-brand" href="#">Navbar</a>-->
 											<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -165,7 +165,7 @@ $data = json_decode($response);
 						-webkit-line-clamp: 3;
 						-webkit-box-orient: vertical;
 					}
-					.slide-item {
+					.targeta {
 						margin-bottom: 40px;
 					}
 				</style>
@@ -209,7 +209,7 @@ $data = json_decode($response);
 							for ($i = 0; $i < count($data_salut->list); $i++) {
 							?>
 							<div class="col-12 col-md-4">
-								<div class="block-images position-relative clicable" onclick="window.location= '/noticia/<?php echo $data_salut->list[$i]->id; ?>/<?php echo $data_salut->list[$i]->title_url; ?>'">
+								<div class="bloc-imatges position-relative clicable" onclick="window.location= '/noticia/<?php echo $data_salut->list[$i]->id; ?>/<?php echo $data_salut->list[$i]->title_url; ?>'">
 									<div class="img-noticia noticia_flex" style="background-image:url(<?php echo $data_salut->list[$i]->img_social; ?>)">
 									</div>
 								</div>

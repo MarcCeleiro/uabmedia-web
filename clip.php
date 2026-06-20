@@ -64,7 +64,7 @@ $data = json_decode($response);
 					font-size: 1.600em;
 				}
 			}
-			.slide-item {
+			.targeta {
 				padding: 0px 0px !important;
 			}
 			.material-symbols-outlined{
@@ -83,7 +83,7 @@ $data = json_decode($response);
 				-webkit-line-clamp: 3;
 				-webkit-box-orient: vertical;
 			}
-			.slide-item {
+			.targeta {
 				margin-bottom: 40px;
 			}
 		</style>
@@ -169,7 +169,7 @@ $data = json_decode($response);
 					$data_usuari = json_decode($response_usuari);
 					?>
 
-					<h1 class="trending-text mt-0" style="font-size: 2rem">
+					<h1 class="titol-destacat mt-0" style="font-size: 2rem">
 						<?php echo htmlspecialchars($data->data->title, ENT_QUOTES, 'UTF-8'); ?>
 					</h1>
 					<div class="d-flex align-items-center" style="margin-top:30px!important;margin-bottom:40px!important">

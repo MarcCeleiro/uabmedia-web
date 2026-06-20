@@ -12,7 +12,7 @@
 								</a>
 							</li>
 
-							<li class="menu-item hide-mobile">
+							<li class="menu-item amaga-mobil">
 								<a href="https://uab.media/actualitat"
 								   <?php 
 								   if ( $_SERVER['PHP_SELF'] == '/index.php' ) {
@@ -28,7 +28,7 @@
 								</a>
 							</li>
 
-							<li class="menu-item hide-mobile">
+							<li class="menu-item amaga-mobil">
 								<a href="https://uab.media/uabradio" id="/uabradio.php"
 								   <?php 
 								   if ( $_SERVER['PHP_SELF'] == '/uabradio.php' ) {
@@ -44,7 +44,7 @@
 								</a>
 							</li>
 
-							<li class="menu-item hide-mobile">
+							<li class="menu-item amaga-mobil">
 								<a href="https://uab.media/uabplay" id="/uabplay.php"  
 								   <?php 
 								   if ( $_SERVER['PHP_SELF'] == '/uabplay.php' ) {
@@ -60,7 +60,7 @@
 								</a>
 							</li>
 
-							<li class="menu-item hide-mobile">
+							<li class="menu-item amaga-mobil">
 								<a href="https://uab.media/especials" id="/especials.php"
 								   <?php
 								   if ( $_SERVER['PHP_SELF'] == '/especials.php' ) {
@@ -84,8 +84,8 @@
 			</div>
 
 							
-			<div class="col-sm-6 hide-mobile" style="text-align:end;">
-				<div class="d-flex align-items-center list-inline m-0 social-icons">
+			<div class="col-sm-6 amaga-mobil" style="text-align:end;">
+				<div class="d-flex align-items-center list-inline m-0 icones-socials">
 					<div class="nav-item nav-icon">
 						<a href="/qui-som.php"
 						   <?php

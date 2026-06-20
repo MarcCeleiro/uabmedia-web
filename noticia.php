@@ -170,12 +170,12 @@ $data = json_decode($response);
 				<div class="row gx-5">
 					<div class="col-lg-8 col-sm-12">
 						<button class="button-return" onclick="window.history.back();"><span class="material-symbols-outlined">reply</span></button>
-						<div class="um-blog-box">
+						<div class="noticia-caixa">
 							<h1 class="titol"><?php echo $data->data->title; ?></h1>
 							<p class="subtitol"><?php echo $data->data->description_seo; ?></p>
 							<br/>
 							<?php echo substr($data->data->date_formatted,0,-3); ?> · Per <strong><?php echo $data->data->user_alias; ?></strong><br/><br/>
-							<div class="um-blog-image">
+							<div class="noticia-imatge">
 								<img src="<?php echo $data->data->img_poster; ?>" >
 								<span><?php echo $data->data->img_legend; ?></span>
 							</div> 

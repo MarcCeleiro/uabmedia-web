@@ -95,7 +95,7 @@ $data_clips = json_decode($response_clips);
 		?>
 		<!--Estil -->
 		<style>
-			.slide-item {
+			.targeta {
 				padding: 0px 0px !important;
 			}
 			.material-symbols-outlined{
@@ -114,7 +114,7 @@ $data_clips = json_decode($response_clips);
 				-webkit-line-clamp: 3;
 				-webkit-box-orient: vertical;
 			}
-			.slide-item {
+			.targeta {
 				margin-bottom: 40px;
 			}
 		</style>
@@ -137,7 +137,7 @@ $data_clips = json_decode($response_clips);
 					 alt="<?php echo htmlspecialchars(trim($data_PROG_id->data->title)); ?>"
 					 >
 				<div>
-					<h1 class="trending-text mt-0" style="font-size: 2rem"><?php echo htmlspecialchars(trim($data_PROG_id->data->title)); ?></h1>
+					<h1 class="titol-destacat mt-0" style="font-size: 2rem"><?php echo htmlspecialchars(trim($data_PROG_id->data->title)); ?></h1>
 					<a href="https://uab.media/uabradio" style="text-decoration: none;">
 						<i class="fa fa-calendar" style="font-size: 2em;"></i>
 					</a>
@@ -154,15 +154,15 @@ $data_clips = json_decode($response_clips);
 					for ($i = 0; $i < count($data_clips->list); $i++) {
 					?>
 					<div class="col-12 col-md-4">
-						<div class="slide-item">
-							<div class="block-images position-relative">
+						<div class="targeta">
+							<div class="bloc-imatges position-relative">
 								<div class="img-box">
 									<a
 									   href="/clip/<?php echo htmlspecialchars(trim($data_clips->list[$i]->id));?>/<?php echo htmlspecialchars(trim($data_clips->list[$i]->title_url)); ?>">
 										<img src="<?php echo htmlspecialchars(trim($data_clips->list[$i]->img_social)); ?>" class="img-fluid" alt="">
 									</a>
 								</div>
-								<div class="block-description">
+								<div class="bloc-descripcio">
 									<h3 class="titol h6">
 										<a href="/clip/<?php echo htmlspecialchars(trim($data_clips->list[$i]->id));?>/<?php echo htmlspecialchars(trim($data_clips->list[$i]->title_url));?>"><?php echo htmlspecialchars(trim($data_clips->list[$i]->title)); ?>
 										</a>

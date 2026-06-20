@@ -62,7 +62,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 	<link rel="stylesheet" href="https://uab.media/assets/css/style.css" />
 	<link rel="stylesheet" href="https://uab.media/assets/css/responsive.css" />
 	<style>
-		.slide-item {
+		.targeta {
 			padding: 0px 0px !important;
 		}
 	</style>
@@ -85,16 +85,16 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 	<div class="contingut">
 		<section id="header">
 			<div class="row">
-				<div class="col-12 overflow-hidden hide-mobile">
+				<div class="col-12 overflow-hidden amaga-mobil">
 					<div class="um-capcalera d-flex align-items-center">
-						<h1 class="main-title titol-capcelera" style="font-size: 2.369em;line-height: 0.8!important">Opinió</h1>
+						<h1 class="titol-principal titol-capcelera" style="font-size: 2.369em;line-height: 0.8!important">Opinió</h1>
 					</div>
 				</div>
 				<section> 
 					<div class="container">
 						<div class="row">
 							<div class="col-0"></div>
-							<div class="col-4 hide-mobile" style="margin-bottom: 2%;padding-left:0!important;" >
+							<div class="col-4 amaga-mobil" style="margin-bottom: 2%;padding-left:0!important;" >
 								<nav class="navbar navbar-expand-lg text-light">
 									<!--<a class="navbar-brand" href="#">Navbar</a>-->
 									<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -177,7 +177,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 									display:-webkit-line-clamp: 3;
 									display:-webkit-box-orient: vertical;
 								}
-								.slide-item {
+								.targeta {
 									margin-bottom: 40px;
 								}
 							</style>
@@ -219,7 +219,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 		  	for ($i = 0; $i < count($data_uab->list); $i++) {
 		  ?>
 		   <div class="col-12 col-md-4">
-           <div class="block-images position-relativ clicable" onclick="window.location= '/noticia/<?php echo $data_uab->list[$i]->id; ?>/<?php echo $data_uab->list[$i]->title_url; ?>'">
+           <div class="bloc-imatges position-relativ clicable" onclick="window.location= '/noticia/<?php echo $data_uab->list[$i]->id; ?>/<?php echo $data_uab->list[$i]->title_url; ?>'">
               <div class="img-noticia noticia_flex" style="background-image:url(<?php echo $data_uab->list[$i]->img_social; ?>)">
               </div>
             </div>

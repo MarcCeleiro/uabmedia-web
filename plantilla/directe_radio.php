@@ -84,8 +84,8 @@ echo "<script>const detallsPrograma = " . json_encode($detalls_programa) . ";</s
 				</div>
 			</div>
 			<div class="col-2 radio-buttons d-flex justify-content-end">
-				<button id="play-btn" class="icon-button" aria-label="Play">&#9658;</button>
-				<button id="pause-btn" class="icon-button" aria-label="Pause" style="display: none;">&#10074;&#10074;</button>
+				<button id="play-btn" class="boto-icona" aria-label="Play">&#9658;</button>
+				<button id="pause-btn" class="boto-icona" aria-label="Pause" style="display: none;">&#10074;&#10074;</button>
 				<audio id="radio-player" controls style="display: none;"></audio>
 			</div>
 		</div>

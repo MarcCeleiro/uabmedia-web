@@ -121,12 +121,12 @@ $data_ARXIU = json_decode($response_ARXIU);
 						for ($i = 0; $i < count($data_PROG->list); $i++) {
 						?>
 						<div class="col-4 col-md-2">
-							<div class="block-images position-relative">
+							<div class="bloc-imatges position-relative">
 								<a href="/programa/<?php echo $data_PROG->list[$i]->id; ?>/<?php echo $data_PROG->list[$i]->title_url; ?>">
-									<div class="img-box icon-programa">
+									<div class="img-box icona-programa">
 										<img 
 											 src="<?php echo $data_PROG->list[$i]->img_poster; ?>" 
-											 class="icon-programa" alt="<?php echo $data_PROG->list[$i]->title; ?>">
+											 class="icona-programa" alt="<?php echo $data_PROG->list[$i]->title; ?>">
 									</div>
 									<center><?php echo $data_PROG->list[$i]->title; ?></center>
 								</a><br/><br/>
@@ -147,12 +147,12 @@ $data_ARXIU = json_decode($response_ARXIU);
 								continue;}            
 						?>
 						<div class="col-4 col-md-2">
-							<div class="block-images position-relative">
+							<div class="bloc-imatges position-relative">
 								<a href="/programa/<?php echo $data_ARXIU->list[$i]->id; ?>/<?php echo $data_ARXIU->list[$i]->title_url; ?>">
-									<div class="img-box icon-programa">
+									<div class="img-box icona-programa">
 										<img 
 											 src="<?php echo $data_ARXIU->list[$i]->img_poster; ?>" 
-											 class="icon-programa" alt="<?php echo $data_ARXIU->list[$i]->title; ?>">
+											 class="icona-programa" alt="<?php echo $data_ARXIU->list[$i]->title; ?>">
 									</div>
 									<center><?php echo $data_ARXIU->list[$i]->title; ?></center>
 								</a>

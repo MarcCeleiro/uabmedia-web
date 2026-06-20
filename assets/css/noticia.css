@@ -17,7 +17,7 @@ header .navbar-light .menu-item svg {
 	filter: invert(15%) sepia(0%) saturate(3102%) hue-rotate(66deg) brightness(89%) contrast(81%)!important;
 }
 
-.social-icons svg {
+.icones-socials svg {
     filter: invert(15%) sepia(0%) saturate(3102%) hue-rotate(66deg) brightness(89%) contrast(81%)!important;
 }
 
@@ -31,12 +31,12 @@ header .navbar ul li.menu-item a:hover {
 
 /* Notícia */
 
-.um-blog-box {
+.noticia-caixa {
 	position: relative;
 	overflow: hidden;
 }
 
-.um-blog-box .titol {
+.noticia-caixa .titol {
 	font-size: 2.5em!important;
 	font-family: 'Merriweather', serif;
 	line-height: 1.2;
@@ -46,18 +46,18 @@ header .navbar ul li.menu-item a:hover {
 }
 
 @media(max-width:991px) {
-	.um-blog-box .titol {
+	.noticia-caixa .titol {
 		font-size: 2em!important;
 	}
 }
 
-.um-blog-box .subtitol {
+.noticia-caixa .subtitol {
 	font-size: 1.2em;
 	font-weight: normal!important;
 	color: black!important;
 }
 
-.um-blog-box h2, .um-blog-box h3, .um-blog-box h4, .um-blog-box h5 .um-blog-box h6 {
+.noticia-caixa h2, .noticia-caixa h3, .noticia-caixa h4, .noticia-caixa h5 .noticia-caixa h6 {
 	font-size: 1.5em!important;
 	font-family: 'Merriweather', serif;
 	line-height: 1.2;
@@ -66,18 +66,18 @@ header .navbar ul li.menu-item a:hover {
 	color: black!important;
 }
 
-.um-blog-box a {
+.noticia-caixa a {
 	color: #FF4C3E!important;
 }
 
-.um-blog-box .um-blog-image {
+.noticia-caixa .noticia-imatge {
 	position: relative;
 	text-align: center;
 	display: inline-block;
 	width: 100%
 }
 
-.um-blog-box .um-blog-image img {
+.noticia-caixa .noticia-imatge img {
 	margin-bottom: 1em;
 	background: var(--blanc-light-color)
 }

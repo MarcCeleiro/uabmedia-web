@@ -69,7 +69,7 @@ $data = json_decode($response);
 
 		?>
 		<style>
-			.slide-item {
+			.targeta {
 				padding: 0px 0px !important;
 			}
 		</style>
@@ -94,10 +94,10 @@ $data = json_decode($response);
 			<div class="container">
 				<section id="header">
 					<div class="row">
-						<div class="col-12 overflow-hidden hide-mobile">
+						<div class="col-12 overflow-hidden amaga-mobil">
 							<div class="um-capcalera d-flex align-items-center">
 								<h1 
-									class="main-title titol-capcelera" 
+									class="titol-principal titol-capcelera" 
 									style="font-size: 2.369em;line-height: 0.8!important">Notícies de
 									política
 								</h1>
@@ -107,7 +107,7 @@ $data = json_decode($response);
 							<div class="container">
 								<div class="row">
 									<div class="col-0"></div>
-									<div class="col-4 hide-mobile" style="margin-bottom: 2%;padding-left:0!important;" >
+									<div class="col-4 amaga-mobil" style="margin-bottom: 2%;padding-left:0!important;" >
 										<nav class="navbar navbar-expand-lg text-light">
 											<!--<a class="navbar-brand" href="#">Navbar</a>-->
 											<button 
@@ -190,7 +190,7 @@ $data = json_decode($response);
 						display: -webkit-line-clamp: 3;
 						display: -webkit-box-orient: vertical;
 					}
-					.slide-item {
+					.targeta {
 						margin-bottom: 40px;
 					}
 				</style>
@@ -235,7 +235,7 @@ $data = json_decode($response);
 							for ($i = 0; $i < count($data_politica->list); $i++) {
 							?>
 							<div class="col-12 col-md-4">
-								<div class="block-images position-relativ clicable" onclick="window.location= '/noticia/<?php echo $data_politica->list[$i]->id; ?>/<?php echo $data_politica->list[$i]->title_url; ?>'">
+								<div class="bloc-imatges position-relativ clicable" onclick="window.location= '/noticia/<?php echo $data_politica->list[$i]->id; ?>/<?php echo $data_politica->list[$i]->title_url; ?>'">
 									<div class="img-noticia noticia_flex" style="background-image:url(<?php echo $data_politica->list[$i]->img_social; ?>)">
 									</div>
 									

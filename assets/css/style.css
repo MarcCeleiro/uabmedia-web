@@ -357,17 +357,17 @@ header .navbar-light .menu-item svg {
 	filter: invert(89%) sepia(0%) saturate(0%) hue-rotate(149deg) brightness(94%) contrast(94%);
 }
 
-.social-icons i {
+.icones-socials i {
 	height: 20px;
 	filter: invert(89%) sepia(0%) saturate(0%) hue-rotate(149deg) brightness(100%) contrast(94%);
 }
 
-.social-icons a {
+.icones-socials a {
 	height: 20px;
 	filter: invert(89%) sepia(0%) saturate(0%) hue-rotate(149deg) brightness(100%) contrast(94%);
 }
 
-header .social-icons {
+header .icones-socials {
 	justify-content: flex-end;
 	gap: 30px;
 }
@@ -696,17 +696,17 @@ header .navbar ul li:last-child {
 	padding-left: 0;
 }
 
-.favorites-slider .slide-item {
+.favorites-slider .targeta {
 	float: left;
 	width: 25%
 }
 
-li.slide-item {
+li.targeta {
 	position: relative;
 	padding: 0 15px
 }
 
-li.slide-item .block-images {
+li.targeta .bloc-imatges {
 	position: relative;
 	width: 100%;
 	transition: all 0.45s ease 0s;
@@ -721,15 +721,15 @@ li.slide-item .block-images {
 	-o-transition: all 0.6s ease 0s
 }
 
-li.slide-item:hover .block-images {
+li.targeta:hover .bloc-imatges {
 	overflow: visible
 }
 
-li.slide-item:hover .block-images .img-box {
+li.targeta:hover .bloc-imatges .img-box {
 	position: relative
 }
 
-li.slide-item:hover .block-images {
+li.targeta:hover .bloc-imatges {
 	z-index: 99;
 	transform: scale3d(1.3, 1.3, 1) translate3d(0, 0, 0) perspective(500px);
 	transform-origin: 50% 50%;
@@ -740,7 +740,7 @@ li.slide-item:hover .block-images {
 	box-shadow: 0 0 12px rgba(0, 0, 0, 0.9)
 }
 
-.block-description {
+.bloc-descripcio {
 	position: absolute;
 	left: 25px;
 	top: 0;
@@ -752,11 +752,11 @@ li.slide-item:hover .block-images {
 	cursor: pointer
 }
 
-.block-description>h6 {
+.bloc-descripcio>h6 {
 	font-size: 1.5em
 }
 
-.block-description .titol {
+.bloc-descripcio .titol {
 	font-size: 16px;
 	color: #ffffff;
 	margin-right: 70px;
@@ -767,7 +767,7 @@ li.slide-item:hover .block-images {
 	font-size: 14px
 }
 
-li.slide-item .block-images::before {
+li.targeta .bloc-imatges::before {
 	position: absolute;
 	content: "";
 	top: 0;
@@ -780,21 +780,21 @@ li.slide-item .block-images::before {
 	opacity: 0
 }
 
-li.slide-item:hover .block-images::before {
+li.targeta:hover .bloc-imatges::before {
 	opacity: 1;
 	z-index: 9
 }
 
-li.slide-item:hover .block-description {
+li.targeta:hover .bloc-descripcio {
 	animation: fadeIn 0.6s ease-in-out;
 	opacity: 1
 }
 
-li.slide-item.slick-current:hover .block-images {
+li.targeta.slick-current:hover .bloc-imatges {
 	transform: scale3d(1.1, 1.1, 1) translate3d(6%, 0, 0) perspective(500px)
 }
 
-li.slide-item .block-images::after {
+li.targeta .bloc-imatges::after {
 	position: absolute;
 	content: "";
 	top: 0;
@@ -813,12 +813,12 @@ small {
 	font-size: 15px;
 }
 
-.slide-item {
+.targeta {
 	position: relative;
 	padding: 0 10px;
 }
 
-.slide-item .block-images {
+.targeta .bloc-imatges {
 	position: relative;
 	width: 100%;
 	transition: all 0.45s ease 0s;
@@ -834,16 +834,16 @@ small {
 	border-radius: var(--um-radius, 12px);
 }
 
-.slide-item:hover .block-images {
+.targeta:hover .bloc-imatges {
 	overflow: visible;
 	border-left: 5px solid #e50914
 }
 
-.slide-item:hover .block-images .img-box {
+.targeta:hover .bloc-imatges .img-box {
 	position: relative
 }
 
-.slide-item:hover .block-images {
+.targeta:hover .bloc-imatges {
 	z-index: 99;
 	transform: scale3d(1.1, 1.1, 1) translate3d(0, 0, 0) perspective(500px);
 	-webkit-transform: scale3d(1.1, 1.1, 1) translate3d(0, 0, 0) perspective(500px);
@@ -862,14 +862,14 @@ small {
 
 /* Llista de programes */
 
-.icon-programa {
+.icona-programa {
 	border-radius: var(--um-radius, 12px);
 	margin-bottom: 8px;
 	transition: all 400ms ease;
 	max-width: 100%;
 
 }
-img.icon-programa:hover{
+img.icona-programa:hover{
 	box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
 	transform:translateY(-3%);
 	margin-right: 20%;
@@ -886,11 +886,11 @@ img.icon-programa:hover{
 	letter-spacing: 1.5px
 }
 
-li.slide-item .block-description .badge {
+li.targeta .bloc-descripcio .badge {
 	background-color: rgb(72, 72, 72, 0.61)
 }
 
-.trending-info {
+.info-destacat {
 	padding: 60px 0
 }
 
@@ -916,7 +916,7 @@ li.slide-item .block-description .badge {
 	display: flex
 }
 
-.trending-info .trending-text {
+.info-destacat .titol-destacat {
 	font-size: 60px;
 	line-height: 100px;
 	margin: 15px 0
@@ -926,23 +926,23 @@ li.slide-item .block-description .badge {
 	background: rgb(0, 0, 0, 0.42)
 }
 
-.trending-info {
+.info-destacat {
 	position: relative;
 	z-index: 99
 }
 
-.movie-detail .trending-info {
+.detall-video .info-destacat {
 	padding: 0 0 20px;
 	border: 1px solid;
 	border-image-slice: 1;
 	border-width: 0 0 1px 0
 }
 
-.movie-detail .trending-info.g-border {
+.detall-video .info-destacat.g-border {
 	border-image-source: linear-gradient(to left, rgba(209, 208, 207, 0), rgba(209, 208, 207, 0.6), rgba(209, 208, 207, 0))
 }
 
-.movie-detail .trending-info .trending-text {
+.detall-video .info-destacat .titol-destacat {
 	font-size: 40px;
 	font-weight: 600;
 	line-height: 1.5;
@@ -959,14 +959,14 @@ video {
 	height: 100%
 }
 
-.video-container {
+.contenidor-video {
 	width: 100%;
 	overflow: hidden;
 	position: relative
 }
 
 .overlay-s-name,
-.video-container.overlay-wrapper:before {
+.contenidor-video.overlay-wrapper:before {
 	z-index: 1
 }
 
@@ -1068,7 +1068,7 @@ video {
 	transition: opacity 0.6s ease
 }
 
-.video-container.slider-principal iframe {
+.contenidor-video.slider-principal iframe {
 	height: 70vh
 }
 
@@ -1216,36 +1216,36 @@ video {
 	padding: 10px 10px 60px
 }
 
-.icon-box {
+.caixa-icona {
 	margin-bottom: 15px
 }
 
-.icon-box .icon-svg {
+.caixa-icona .icona-svg {
 	fill: #ffffff;
 	color: #ffffff;
 	border-color: #ffffff
 }
 
-.icon-svg svg {
+.icona-svg svg {
 	width: 50px;
 	height: 50px;
 	position: relative;
 	display: block
 }
 
-.icon-box-content {
+.caixa-icona-cos {
 	-webkit-box-flex: 1;
 	-ms-flex-positive: 1;
 	flex-grow: 1
 }
 
-.icon-box-content .icon-box-title {
+.caixa-icona-cos .caixa-icona-titol {
 	color: #ff4c3e;
 	font-family: var(--e-global-typography-primary-font-family), Sans-serif;
 	font-weight: var(--e-global-typography-primary-font-weight)
 }
 
-.icon-box-title>span {
+.caixa-icona-titol>span {
 	font-size: 24px
 }
 

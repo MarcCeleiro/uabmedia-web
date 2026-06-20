@@ -350,8 +350,8 @@ $dadesMesActualitat = json_decode($respostaMesActualitat);
 					<?php $i = 0;
 					while ($i < 5 && isset($dadesInformatius->list[$i])) { ?>
 					<div class="informatiuIndex">
-						<div class="slide-item">
-							<div class="block-images position-relative">
+						<div class="targeta">
+							<div class="bloc-imatges position-relative">
 								<a href="/clip/<?php echo $dadesInformatius->list[$i]->id; ?>/<?php echo $dadesInformatius->list[$i]->title_url; ?>">
 									<div class="img-box">
 										<img 
@@ -359,7 +359,7 @@ $dadesMesActualitat = json_decode($respostaMesActualitat);
 											 src="<?php echo $dadesInformatius->list[$i]->img_poster; ?>" 
 											 class="img-fluid" alt="<?php echo $dadesInformatius->list[$i]->title; ?>">
 									</div>
-									<div class="block-description"></div>
+									<div class="bloc-descripcio"></div>
 								</a>
 							</div>
 						</div>

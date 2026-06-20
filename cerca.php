@@ -59,7 +59,7 @@
 					-webkit-line-clamp: 3;
 					-webkit-box-orient: vertical;
 				}
-				.slide-item {
+				.targeta {
 					margin-bottom: 40px;
 					padding: 0!important;
 				}
@@ -68,12 +68,12 @@
 			<div class="row">
 				<?php for ($i = 0; $i < count($data->list); $i++) { ?>
 				<div class="col-12 col-md-4">
-					<div class="slide-item">
-						<div class="block-images position-relative">
+					<div class="targeta">
+						<div class="bloc-imatges position-relative">
 							<div class="img-box">
 								<img src="<?php echo $data->list[$i]->img_social; ?>" class="img-fluid" alt="<?php echo $data->list[$i]->title; ?>">
 							</div>
-							<div class="block-description">
+							<div class="bloc-descripcio">
 								<h3 class="titol h6">
 									<a href="/clip/<?php echo $data->list[$i]->id; ?>/<?php echo $data->list[$i]->title_url; ?>"><?php echo $data->list[$i]->title; ?></a>
 								</h3>
@@ -121,12 +121,12 @@
 			<div class="row">
 				<?php for ($inews = 0; $inews < count($data_news->list); $inews++) { ?>
 				<div class="col-12 col-md-4">
-					<div class="slide-item">
-						<div class="block-images position-relative">
+					<div class="targeta">
+						<div class="bloc-imatges position-relative">
 							<div class="img-box">
 								<img src="<?php echo $data_news->list[$inews]->img_social; ?>" class="img-fluid" alt="<?php echo $data_news->list[$inews]->title; ?>">
 							</div>
-							<div class="block-description">
+							<div class="bloc-descripcio">
 								<h3 class="titol h6">
 									<a href="/noticia/<?php echo $data_news->list[$inews]->id; ?>/<?php echo $data_news->list[$inews]->title_url; ?>"><?php echo $data_news->list[$inews]->title; ?></a>
 								</h3>
