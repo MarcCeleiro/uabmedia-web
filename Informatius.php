@@ -1,5 +1,5 @@
 <?php
-include dirname(__DIR__) . '/config.php';
+include 'config.php';
 
 $GET_VARS2 = array(
 	"go"        => "categories",

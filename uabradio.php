@@ -43,46 +43,62 @@ $response_carrousel = curl_exec($ch_carrousel);
 $data_carrousel = json_decode($response_carrousel);
 //END mòdul PHP carrousel
 
-//START mòdul PHP graella.json. Per canviar la graella s'ha d'agafar l'arxiu graella.json i s'agafi els id dels programes/categories		
+//START mòdul PHP graella.json. Per canviar la graella s'ha d'agafar l'arxiu graella.json i s'agafi els id dels programes/categories
 $programacion_semanal = json_decode(file_get_contents('graella.json'), true);
-$detalles_programas = [];
+$detalles_programas = null;
 
-foreach ($programacion_semanal as $dia => $programas) {
-	foreach ($programas as $programa) {
-		$GET_VARS_PROG = array(
-			"go" => "categories",
-			"do" => "get",
-			"iq" => $programa['id']
-		);
-		$REQUEST_URL_PROG = $API_URL . "?" . http_build_query($GET_VARS) . "&" . 				http_build_query($GET_VARS_PROG);
-		$ch_PROG = curl_init();
-		curl_setopt($ch_PROG, CURLOPT_URL, $REQUEST_URL_PROG);
-		curl_setopt($ch_PROG, CURLOPT_RETURNTRANSFER, true);
-		curl_setopt($ch_PROG, CURLOPT_HEADER, false);
+// Igual que a directe_radio.php: resoldre cada programa de la graella suposava
+// ~35 crides síncrones a l'API per visita. Les cachem en disc 1 hora i les
+// invalidem quan graella.json canvia.
+$cacheDir  = 'cache';
+$cacheFile = $cacheDir . '/uabradio_graella.json';
+$cacheTtl  = 3600;
 
-		$response_PROG = curl_exec($ch_PROG);
-		if (curl_errno($ch_PROG)) {
-			echo 'Error en cURL: ' . curl_error($ch_PROG);
-		}
-
-		$datos_programa = json_decode($response_PROG, true);
-		if (isset($datos_programa['data'])) {
-			$detalles_programas[$dia][] = [
-				'id' => $programa['id'],
-				'hora_inici' => $programa['hora_inici'],
-				'titulo' => $datos_programa['data']['title'],
-				'img_poster' => $datos_programa['data']['img_poster']
-			];
-		}
-
-		$detalles_programas[$dia][] = [
-			'id' => $programa['id'],
-			'hora_inicio' => $programa['hora_inicio'],
-			'titulo' => $datos_programa['titulo'],
-		];
-
-		curl_close($ch_PROG);
+if (
+	is_file($cacheFile)
+	&& (time() - filemtime($cacheFile) < $cacheTtl)
+	&& filemtime($cacheFile) >= filemtime('graella.json')
+) {
+	$cached = json_decode(file_get_contents($cacheFile), true);
+	if (is_array($cached)) {
+		$detalles_programas = $cached;
 	}
+}
+
+if ($detalles_programas === null) {
+	$detalles_programas = [];
+
+	foreach ($programacion_semanal as $dia => $programas) {
+		foreach ($programas as $programa) {
+			$GET_VARS_PROG = array(
+				"go" => "categories",
+				"do" => "get",
+				"iq" => $programa['id']
+			);
+			$REQUEST_URL_PROG = $API_URL . "?" . http_build_query($GET_VARS) . "&" . http_build_query($GET_VARS_PROG);
+			$ch_PROG = curl_init();
+			curl_setopt($ch_PROG, CURLOPT_URL, $REQUEST_URL_PROG);
+			curl_setopt($ch_PROG, CURLOPT_RETURNTRANSFER, true);
+			curl_setopt($ch_PROG, CURLOPT_HEADER, false);
+
+			$response_PROG = curl_exec($ch_PROG);
+			$datos_programa = json_decode($response_PROG, true);
+
+			if (isset($datos_programa['data'])) {
+				$detalles_programas[$dia][] = [
+					'id' => $programa['id'],
+					'hora_inici' => $programa['hora_inici'],
+					'titulo' => $datos_programa['data']['title'],
+					'img_poster' => $datos_programa['data']['img_poster']
+				];
+			}
+		}
+	}
+
+	if (!is_dir($cacheDir)) {
+		@mkdir($cacheDir, 0775, true);
+	}
+	@file_put_contents($cacheFile, json_encode($detalles_programas), LOCK_EX);
 }
 //END mòdul PHP graella json
 
