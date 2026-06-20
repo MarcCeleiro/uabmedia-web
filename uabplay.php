@@ -126,7 +126,7 @@ $data_ARXIU = json_decode($response_ARXIU);
 									<div class="img-box icon-programa">
 										<img 
 											 src="<?php echo $data_PROG->list[$i]->img_poster; ?>" 
-											 class="icon-programa" alt="<?php echo $data3->list[$i]->title; ?>">
+											 class="icon-programa" alt="<?php echo $data_PROG->list[$i]->title; ?>">
 									</div>
 									<center><?php echo $data_PROG->list[$i]->title; ?></center>
 								</a><br/><br/>

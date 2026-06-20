@@ -100,7 +100,7 @@ $data = json_decode($response);
 
 			$POST_VARS3 = array(
 				"sortByFilter"      => "date",
-				"categoriesFilter"  => $data->data->id,
+				"categoriesFilter"  => $data->data->id ?? null,
 				"statusFilter"		=> 1,
 				"resultsPerPageFilter" => 100,
 			);

@@ -348,7 +348,7 @@ $dadesMesActualitat = json_decode($respostaMesActualitat);
 				<a href="https://uab.media/programa/2/informatius"><h3 class="titol-seccio">Informatius</h3></a>
 				<div class="informatius-row-Index">
 					<?php $i = 0;
-					while ($i < 5) { ?>
+					while ($i < 5 && isset($dadesInformatius->list[$i])) { ?>
 					<div class="informatiuIndex">
 						<div class="slide-item">
 							<div class="block-images position-relative">
