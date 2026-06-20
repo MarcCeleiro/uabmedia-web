@@ -128,28 +128,6 @@
 	});
 </script>
 
-<script>
-	$(document).ready(function() {
-		$('#pause_btn').hide();
-		//$('#radio_directe').get(0).play();
-
-		$('#play_btn').click(function() {
-			$('#radio_directe').get(0).play();
-			$('#play_btn').hide();
-			$('#pause_btn').show();
-		});
-
-		$('#pause_btn').click(function() {
-			$('#radio_directe').get(0).pause();
-			$('#play_btn').show();
-			$('#pause_btn').hide();
-
-
-
-		});
-	});
-</script>
-
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" defer></script>
 <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.min.js" defer></script>
 <script src="/assets/js/slick.min.js" defer></script>

@@ -589,7 +589,6 @@ $dadesMesActualitat = json_decode($respostaMesActualitat);
 
 		<?php include('plantilla/footer.php'); ?>
 		<script src="/assets/js/search.js"></script>
-		<script src="/assets/js/radio_en_directo.js"></script>
 	</body>
 
 </html>

@@ -300,23 +300,6 @@ $data = json_decode($response);
 		<?php
 		include './plantilla/footer.php';
 		?>
-		<script>
-			// Amagar PEUDIRECTE quan es fa clic al pause en una pàgina que no és index.php
-			document.addEventListener("DOMContentLoaded", function() {
-				// Obtenir referència al botó i al div
-				var pause_btn = document.getElementById("pause_btn");
-				var peudirecte = document.getElementById("peudirecte");
-
-				// Gestionar el clic al botó
-				pause_btn.addEventListener("click", function() {
-					// Canviar la visibilitat del div
-					if (peudirecte.style.display === "none") {
-						peudirecte.style.display = "block";
-					} else {
-						peudirecte.style.display = "none";
-					}
-				});
-			}); </script>
 		<script src="/assets/js/search.js"></script>
 		<script src="/assets/js/popper.min.js"></script>
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>

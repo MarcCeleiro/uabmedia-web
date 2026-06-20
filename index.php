@@ -155,9 +155,7 @@ $dadesClipsRecents = json_decode($respostaClipsRecents);
 	</head>
 
 	<body>
-		<?php session_set_cookie_params(24 * 60 * 60); session_start();
-		setlocale(LC_ALL, "ca_ES");
-		?>
+		<?php setlocale(LC_ALL, "ca_ES"); ?>
 		<?php include './plantilla/header.php'; ?>
 
 		<div class="container">
@@ -216,7 +214,7 @@ $dadesClipsRecents = json_decode($respostaClipsRecents);
 									</a>
 									<div class="carousel-caption d-md-block">
 										<h5>
-											<a href="/clip/<?php echo $dadesClipsRecents->list['3']->id; ?>/<?php echo $dadesClipsRecents->list['2']->title_url; ?>"><?php echo $dadesClipsRecents->list['3']->title; ?>
+											<a href="/clip/<?php echo $dadesClipsRecents->list['3']->id; ?>/<?php echo $dadesClipsRecents->list['3']->title_url; ?>"><?php echo $dadesClipsRecents->list['3']->title; ?>
 												<p>
 													<?php echo substr($dadesClipsRecents->list['3']->date_formatted, 0, -9); ?>
 												</p>
@@ -230,7 +228,7 @@ $dadesClipsRecents = json_decode($respostaClipsRecents);
 									</a>
 									<div class="carousel-caption d-md-block">
 										<h5>
-											<a href="/clip/<?php echo $dadesClipsRecents->list['4']->id; ?>/<?php echo $dadesClipsRecents->list['2']->title_url; ?>"><?php echo $dadesClipsRecents->list['4']->title; ?>
+											<a href="/clip/<?php echo $dadesClipsRecents->list['4']->id; ?>/<?php echo $dadesClipsRecents->list['4']->title_url; ?>"><?php echo $dadesClipsRecents->list['4']->title; ?>
 												<p>
 													<?php echo substr($dadesClipsRecents->list['4']->date_formatted, 0, -9); ?>
 												</p>
@@ -311,6 +309,5 @@ $dadesClipsRecents = json_decode($respostaClipsRecents);
 		<?php include './plantilla/footer.php'; ?>
 
 		<script src="/assets/js/search.js"></script>
-		<script src="/assets/js/radio_en_directo.js"></script>
 	</body>
 </html>

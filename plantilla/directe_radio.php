@@ -54,7 +54,7 @@ echo "<script>const detallsPrograma = " . json_encode($detalls_programa) . ";</s
 				<img id="program-image" src="https://uab.media/assets/images/gif-musica.gif" alt="UABràdio - Música">
 				<div id="program-details">
 					<div id="live-text">UABràdio en directe</div>
-					<!--<div id="program-info">UABràdio en directe</div>-->
+					<div id="program-info"></div>
 				</div>
 			</div>
 			<div class="col-2 radio-buttons d-flex justify-content-end">
@@ -149,14 +149,18 @@ echo "<script>const detallsPrograma = " . json_encode($detalls_programa) . ";</s
 			const imgDiv = document.getElementById("program-image");
 
 			if (programaEnDirecte) {
-				infoDiv.textContent = `${programaEnDirecte.titol}`;
-				imgDiv.src = `${programaEnDirecte.img_poster}`;
-				imgDiv.alt = programaEnDirecte.titol;
+				if (infoDiv) infoDiv.textContent = `${programaEnDirecte.titol}`;
+				if (imgDiv) {
+					imgDiv.src = `${programaEnDirecte.img_poster}`;
+					imgDiv.alt = programaEnDirecte.titol;
+				}
 				updateMediaSession(programaEnDirecte);
 			} else {
-				infoDiv.textContent = "Sessions musicals";
-				imgDiv.src = "https://uab.media/assets/images/gif-musica.gif";
-				imgDiv.alt = "Sessions musicals";
+				if (infoDiv) infoDiv.textContent = "Sessions musicals";
+				if (imgDiv) {
+					imgDiv.src = "https://uab.media/assets/images/gif-musica.gif";
+					imgDiv.alt = "Sessions musicals";
+				}
 				updateMediaSession(null);
 			}
 		}

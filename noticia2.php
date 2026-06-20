@@ -216,23 +216,6 @@ $data = json_decode($response);
 		<?php
 		include './plantilla/footer.php';
 		?>
-		<script>
-			//esconder PEUDIRECTE cuando le das al pause en una pagina que no es el index.php
-			document.addEventListener("DOMContentLoaded", function() {
-				// Obtener referencia al botón y al div
-				var pause_btn = document.getElementById("pause_btn");
-				var peudirecte = document.getElementById("peudirecte");
-
-				// Manejar el clic en el botón
-				pause_btn.addEventListener("click", function() {
-					// Cambiar la visibilidad del div
-					if (peudirecte.style.display === "none") {
-						peudirecte.style.display = "block";
-					} else {
-						peudirecte.style.display = "none";
-					}
-				});
-			}); </script>
 		<script src="/assets/js/search.js"></script>
 		<script src="/assets/js/popper.min.js"></script>
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
