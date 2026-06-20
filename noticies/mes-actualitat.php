@@ -87,9 +87,7 @@ $data = json_decode($response);
 				<section id="header">
 					<div class="row">
 						<div class="col-12 overflow-hidden amaga-mobil">
-							<div class="um-capcalera d-flex align-items-center">
-								<h1 class="titol-principal titol-capcelera" style="font-size: 2.369em;line-height: 0.8!important">Més Notícies</h1>
-							</div>
+							<h1 class="titol-pagina">Més Notícies</h1>
 						</div>
 						<section> 
 							<div class="container">
