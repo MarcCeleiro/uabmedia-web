@@ -485,8 +485,13 @@ $data_ARXIU = json_decode($response_ARXIU);
 
 
 		<script>
-			AOS.init({
-				duration: 500
+			// AOS is loaded with "defer" in the footer, so it isn't available yet
+			// when this inline script runs. Initialise it once the DOM is ready
+			// (deferred scripts have executed by then) and guard for safety.
+			document.addEventListener('DOMContentLoaded', function () {
+				if (window.AOS) {
+					AOS.init({ duration: 500 });
+				}
 			});
 		</script>
 		<script src="/assets/js/search.js"></script>
