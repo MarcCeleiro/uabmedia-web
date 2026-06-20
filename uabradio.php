@@ -207,9 +207,9 @@ $data_ARXIU = json_decode($response_ARXIU);
 		?>
 		<div class="container">
 			<section>
-				<h1 class="titol-pagina"><img style="margin-right:20px;height:30px;padding-bottom:5px" src="https://uab.media/assets/images/uabradio-color.svg" alt="UABplay">UABràdio</h1>
+				<h1 class="titol-pagina"><img class="logo-titol" src="https://uab.media/assets/images/uabradio-color.svg" alt="UABplay">UABràdio</h1>
 				<span>La ràdio de la Facultat de Ciències de la Comunicació de la UAB</span>
-				<div class="row gx-5" style="margin-top: 40px;margin-bottom: 40px">
+				<div class="row gx-5 mt-40 mb-40">
 					<div class="col-sm-6 col-12 order-2 order-md-1">
 						<!--llista de la setmana-->
 						<ul class="nav nav-tabs flex-wrap flex-lg-nowrap" id="myTab" role="tablist">
@@ -260,7 +260,7 @@ $data_ARXIU = json_decode($response_ARXIU);
 										<?php echo $programa['hora_inici']; ?>
 										<a 
 										   href="/programa/<?php echo $programa['id']; ?>/<?php echo str_replace(' ', '-', $programa['titulo']); ?>">
-											<span class="h5" style="display:block;color:#fff;"><?php echo $programa['titulo']; ?></span>
+											<span class="h5 nom-programa"><?php echo $programa['titulo']; ?></span>
 										</a>						
 									</div>
 								</div>

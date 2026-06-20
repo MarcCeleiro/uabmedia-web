@@ -56,7 +56,7 @@
   <?php
    include './plantilla/header.php';
    ?>
-    <div class="container" style="padding-top:40px">
+    <div class="container pagina-simple">
         <h1 class="titol-pagina">Avís Legal</h1><br/>
         <?php echo $data->data->description ?? ''; ?>
     </div>

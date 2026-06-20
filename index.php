@@ -251,9 +251,9 @@ $dadesClipsRecents = json_decode($respostaClipsRecents);
 						<div class="bloc-inici">
 							<img width="230" src="https://uab.media/assets/images/logo-uabmedia.png" alt="UABmèdia">
 							<br/><br/>
-							<h1 style="font-size: 1.4em">Us donem la benvinguda<br/><strong style="font-size: 1.4em!important">a UABmèdia</strong></h1>
+							<h1 class="titol-benvinguda">Us donem la benvinguda<br/><strong>a UABmèdia</strong></h1>
 							<br/>
-							<p style="font-size: 1.0em, text-align: justify">UABmèdia és un espai de formació universitària centrat en la creació, producció i emissió de continguts innovadors i de qualitat ubicat en la facultat de Ciències de la Comunicació de la UAB.</p><p style="font-size: 1.0em">Com a plataforma multimèdia articulem continguts sonors, audiovisuals, digitals i interactius que elabora l’alumnat, així com la resta de la comunitat universitària.</p>
+							<p>UABmèdia és un espai de formació universitària centrat en la creació, producció i emissió de continguts innovadors i de qualitat ubicat en la facultat de Ciències de la Comunicació de la UAB.</p><p>Com a plataforma multimèdia articulem continguts sonors, audiovisuals, digitals i interactius que elabora l’alumnat, així com la resta de la comunitat universitària.</p>
 						</div>
 					</div>
 				</div>
@@ -261,7 +261,7 @@ $dadesClipsRecents = json_decode($respostaClipsRecents);
 				<?php include './plantilla/directe_radio.php';?>
 			</section>
 
-			<section id="actualitat" style="margin-bottom:40px">
+			<section id="actualitat" class="mb-40">
 				<a href="https://uab.media/actualitat"><h2 class="titol-seccio h3">Actualitat</h2></a>
 				<div class="row gx-4 actualitat-row">
 					<?php
@@ -273,9 +273,9 @@ $dadesClipsRecents = json_decode($respostaClipsRecents);
 					if ($b >= $a):
 					?>
 					<a class="col-12 col-md-8 noticia-gran d-flex flex-column flex-md-row" href="/noticia/<?php echo $dadesNoticies->list['0']->id; ?>/<?php echo $dadesNoticies->list['0']->title_url; ?>">
-					<img class="imatge-destacada col-12 col-md-6"
+					<img class="imatge-destacada col-12 col-md-6 img-fluida"
 						 src="<?php echo $dadesNoticies->list['0']->img_social; ?>"
-						 style="max-width:100%; height:auto;">
+						>
 					<div class="contingut-noticia col-12 col-md-6">
 						<h3 class="titol"><?php echo $dadesNoticies->list['0']->title; ?></h3>
 						<p class="subtitol"><?php echo $dadesNoticies->list['0']->description_seo; ?></p>
@@ -283,7 +283,7 @@ $dadesClipsRecents = json_decode($respostaClipsRecents);
 					</div>
 					</a>
 					<?php else: ?>
-					<a class="col-12 col-md noticia-gran" style="min-height: 600px" href="/noticia/<?php echo $dadesClips->list['0']->id; ?>/<?php echo $dadesClips->list['0']->title_url; ?>">
+					<a class="col-12 col-md noticia-gran noticia-gran-alta" href="/noticia/<?php echo $dadesClips->list['0']->id; ?>/<?php echo $dadesClips->list['0']->title_url; ?>">
 						<img class="imatge-destacada" src="<?php echo $dadesClips->list['0']->img_social; ?>">
 						<div class="contingut-noticia">
 							<h3 class="titol"><?php echo $dadesClips->list['0']->title; ?></h3>

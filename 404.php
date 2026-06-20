@@ -19,7 +19,7 @@
 		<div class="contingut">
 			<div class="container">
 				<center>
-					<img class="logo" style="margin-top: 50px; width:300px" src="https://uab.media/assets/images/404.png" alt="En Puigdemiau" />
+					<img class="logo logo-404" src="https://uab.media/assets/images/404.png" alt="En Puigdemiau" />
 					<br/><br/>
 					<h1>Error 404</h1>
 					<p>En Catles no troba la pàgina que buscaves. Ens sap greu.</p>

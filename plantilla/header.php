@@ -84,7 +84,7 @@
 			</div>
 
 							
-			<div class="col-sm-6 amaga-mobil" style="text-align:end;">
+			<div class="col-sm-6 amaga-mobil text-end">
 				<div class="d-flex align-items-center list-inline m-0 icones-socials">
 					<div class="nav-item nav-icon">
 						<a href="/qui-som.php"

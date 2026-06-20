@@ -302,7 +302,7 @@ $dadesMesActualitat = json_decode($respostaMesActualitat);
 		?>
 
 		<div class="container">
-			<h1 class="titol-pagina"><svg xmlns="http://www.w3.org/2000/svg" style="margin-right:20px;height:30px;padding-bottom:5px;fill:#fff" viewBox="0 0 24 24">
+			<h1 class="titol-pagina"><svg xmlns="http://www.w3.org/2000/svg" class="logo-titol" viewBox="0 0 24 24">
 				<path d="M20 3H4C2.89 3 2 3.89 2 5V19C2 20.11 2.89 21 4 21H20C21.11 21 22 20.11 22 19V5C22 3.89 										21.11 3 20 3M5 7H10V13H5V7M19 17H5V15H19V17M19 13H12V11H19V13M19 9H12V7H19V9Z" />
 				</svg>Actualitat</h1>
 
@@ -343,7 +343,7 @@ $dadesMesActualitat = json_decode($respostaMesActualitat);
 			</div>
 		</div>
 
-        <section id="campus" class="seccio" style="background-color:#2c2c2c!important;color:#333;">
+        <section id="campus" class="seccio bg-dark">
 			<div class="container">
 				<a href="https://uab.media/programa/2/informatius"><h3 class="titol-seccio">Informatius</h3></a>
 				<div class="informatius-row-Index">
@@ -395,7 +395,7 @@ $dadesMesActualitat = json_decode($respostaMesActualitat);
 
         
 
-        <section id="cultura-i-mitjans" class="seccio" style="background-color:#2c2c2c!important;color:#333;">
+        <section id="cultura-i-mitjans" class="seccio bg-dark">
 			<div class="container">
 				<a href="https://uab.media/noticies/cultura-i-mitjans"><h3 class="titol-seccio">Cultura i Mitjans</h3></a>
 				<div class="row gx-3">
@@ -443,7 +443,7 @@ $dadesMesActualitat = json_decode($respostaMesActualitat);
 			</div>
 		</section>
 
-		<section id="igualtat" class="seccio" style="background-color:#2c2c2c!important;color:#333;">
+		<section id="igualtat" class="seccio bg-dark">
 			<div class="container">
 				<a href="https://uab.media/noticies/igualtat"><h3 class="titol-seccio">Igualtat</h3></a>
 				<div class="row gx-3">
@@ -491,7 +491,7 @@ $dadesMesActualitat = json_decode($respostaMesActualitat);
 			</div>
 		</section>
 
-        <section id="ciència-i-tecnologia" class="seccio" style="background-color:#2c2c2c!important;color:#333;">
+        <section id="ciència-i-tecnologia" class="seccio bg-dark">
 			<div class="container">
 				<a href="https://uab.media/noticies/medi-ambient"><h3 class="titol-seccio">Medi Ambient i Sostenibilitat</h3></a>
 				<div class="row gx-3">
@@ -539,7 +539,7 @@ $dadesMesActualitat = json_decode($respostaMesActualitat);
 			</div>
 		</section>
 
-        <section id="campus" class="seccio" style="background-color:#2c2c2c!important;color:#333;">
+        <section id="campus" class="seccio bg-dark">
 			<div class="container">
 				<a href="https://uab.media/noticies/centenari"><h3 class="titol-seccio">Centenari de la Ràdio</h3></a>
 				<div class="row gx-3">

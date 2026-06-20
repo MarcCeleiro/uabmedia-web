@@ -73,7 +73,7 @@
 				<div class="legal col-lg-4">
 					<h3>Quant a UABmèdia</h3>
 					<p>UABmèdia és un espai de formació universitari mitjançant la creació, producció i emissió de continguts innovadors i de qualitat.</p>
-					<a href="https://www.uab.cat/comunicacio/" target="_blank"><img src="https://uab.media/assets/images/logofacultat.svg" style="width:100%;margin-top: 10px" alt="Logotip de la Universitat Autònoma de Barcelona"></a>
+					<a href="https://www.uab.cat/comunicacio/" target="_blank"><img src="https://uab.media/assets/images/logofacultat.svg" class="img-peu" alt="Logotip de la Universitat Autònoma de Barcelona"></a>
 					
 					<nav aria-label="Informació tècnica i legal">
 						<ul>

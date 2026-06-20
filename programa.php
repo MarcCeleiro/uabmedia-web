@@ -132,14 +132,14 @@ $data_clips = json_decode($response_clips);
 
 			<!--Logo + Titulo + Icono i descripcion seo con el horario programa + info -->
 			<div class="d-flex align-items-center">
-				<img style="margin-right:20px;width:120px;border-radius: 50%;"
+				<img class="avatar-programa"
 					 src="<?php echo htmlspecialchars(trim($data_PROG_id->data->img_social)); ?>"
 					 alt="<?php echo htmlspecialchars(trim($data_PROG_id->data->title)); ?>"
 					 >
 				<div>
-					<h1 class="titol-destacat mt-0" style="font-size: 2rem"><?php echo htmlspecialchars(trim($data_PROG_id->data->title)); ?></h1>
-					<a href="https://uab.media/uabradio" style="text-decoration: none;">
-						<i class="fa fa-calendar" style="font-size: 2em;"></i>
+					<h1 class="titol-destacat mt-0 titol-detall"><?php echo htmlspecialchars(trim($data_PROG_id->data->title)); ?></h1>
+					<a href="https://uab.media/uabradio" class="text-decoration-none">
+						<i class="fa fa-calendar icona-calendari"></i>
 					</a>
 					<span><?php echo htmlspecialchars(trim($data_PROG_id->data->description_seo)); ?></span>
 				</div>

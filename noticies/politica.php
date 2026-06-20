@@ -101,7 +101,7 @@ $data = json_decode($response);
 							<div class="container">
 								<div class="row">
 									<div class="col-0"></div>
-									<div class="col-4 amaga-mobil" style="margin-bottom: 2%;padding-left:0!important;" >
+									<div class="col-4 amaga-mobil menu-categories" >
 										<nav class="navbar navbar-expand-lg text-light">
 											<!--<a class="navbar-brand" href="#">Navbar</a>-->
 											<button 
@@ -116,12 +116,12 @@ $data = json_decode($response);
 											</button>
 											<div class="collapse navbar-collapse text-light" id="navbarNavDropdown">
 												<ul class="navbar-nav">
-													<li class="nav-item" style="margin-right: 20px">
+													<li class="nav-item">
 														<a 
 														   class="nav-link text-light"
 														   href="https://uab.media/programa/2/Informatius">Informatius</a>
 													</li>
-													<li class="nav-item dropdown" style="margin-right: 20px">
+													<li class="nav-item dropdown">
 														<a 
 														   class="nav-link dropdown-toggle text-light" 
 														   class="btn btn-secondary dropdown-toggle" 
@@ -138,7 +138,7 @@ $data = json_decode($response);
 															<a class="dropdown-item" href="https://uab.media/noticies/esports">Esports</a>
 														</div>
 													</li>
-													<li class="nav-item" style="margin-right: 20px">
+													<li class="nav-item">
 														<a class="nav-link text-light" href="https://uab.media/noticies/opinio">Opinió</a>
 													</li>
 												</ul>

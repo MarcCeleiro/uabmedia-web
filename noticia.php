@@ -39,7 +39,7 @@ function replaceStaffEmbeddedVideos($content) {
 		if ($videoData && isset($videoData->data) && isset($videoData->media[0])) {
 			$uniqueId = 'jwplayer_' . $videoId . '_' . uniqid();
 			
-			$jwPlayerHtml = '<div id="' . $uniqueId . '" style="width: 100%; height: 225px; margin: 20px 0;"></div>';
+			$jwPlayerHtml = '<div id="' . $uniqueId . '" class="player-jw"></div>';
 			$jwPlayerHtml .= '<script type="text/JavaScript">
 				jwplayer("' . $uniqueId . '").setup({ 
 					"width": "100%",

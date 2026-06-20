@@ -116,8 +116,8 @@ $data = json_decode($response);
                             ?>
 							<br/>
                             <div class="um-capcalera d-flex align-items-center">
-                                <img style="margin-right:20px;width:40px;border-radius: 50%;" src="<?php echo $data_usuari->data->img_social; ?>" alt="<?php echo $data->categories['0']->title; ?>">
-								<h2 class="h6"><strong><?php echo $data->categories['0']->title; ?></strong><br/><div style="color:#d1d0cf!important;font-size:10pt!important">Publicat el <?php echo substr($data->data->date_formatted,0,-9); ?></div></h2>
+                                <img class="avatar-autor" src="<?php echo $data_usuari->data->img_social; ?>" alt="<?php echo $data->categories['0']->title; ?>">
+								<h2 class="h6"><strong><?php echo $data->categories['0']->title; ?></strong><br/><div class="meta-categoria">Publicat el <?php echo substr($data->data->date_formatted,0,-9); ?></div></h2>
                             </div>
 							<p><?php echo $data->data->description; ?></p>
 						</div>

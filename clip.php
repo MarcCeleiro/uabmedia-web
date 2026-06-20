@@ -169,19 +169,19 @@ $data = json_decode($response);
 					$data_usuari = json_decode($response_usuari);
 					?>
 
-					<h1 class="titol-destacat mt-0" style="font-size: 2rem">
+					<h1 class="titol-destacat mt-0 titol-detall">
 						<?php echo htmlspecialchars($data->data->title, ENT_QUOTES, 'UTF-8'); ?>
 					</h1>
-					<div class="d-flex align-items-center" style="margin-top:30px!important;margin-bottom:40px!important">
+					<div class="d-flex align-items-center meta-clip">
 						<img 
-							 style="margin-right:20px;width:40px;border-radius: 50%;" 
+							 class="avatar-autor" 
 							 src="<?php echo $data_usuari->data->img_social; ?>" 
 							 alt="<?php echo $data->categories['0']->title; ?>"
 							 >
 						<h2 class="h6">
 							<strong><?php echo $data->categories['0']->title; ?></strong>
 							<br/>
-							<div style="color:#d1d0cf!important;font-size:10pt!important">
+							<div class="meta-categoria">
 								Publicat el <?php echo substr($data->data->date_formatted,0,-9); ?>
 							</div>
 						</h2>

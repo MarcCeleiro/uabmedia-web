@@ -94,9 +94,9 @@ $data_ARXIU = json_decode($response_ARXIU);
 	<body>
 		<?php include './plantilla/header.php';?>
 		<div class="container">
-			<h1 class="titol-pagina"><img style="margin-right:20px;height:30px;padding-bottom:5px" src="https://uab.media/assets/images/uabtv-color.svg" alt="UABplay">UABplay</h1>
+			<h1 class="titol-pagina"><img class="logo-titol" src="https://uab.media/assets/images/uabtv-color.svg" alt="UABplay">UABplay</h1>
 			<span>La televisió de la Facultat de Ciències de la Comunicació de la UAB</span>
-			<section id="directetv" style="margin-top: 40px">
+			<section id="directetv" class="mt-40">
 				<script src= "https://player.twitch.tv/js/embed/v1.js"></script>
 				<div id="twitch-embed" 
 					 style="height: 360px; width: 640px;">

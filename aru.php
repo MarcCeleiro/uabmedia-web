@@ -137,14 +137,14 @@ $data = json_decode($response);
 				<br/>
 				<!--Logo + Titulo + Icono i descripcion seo con el horario programa + info -->
 				<div class="d-flex align-items-center">
-					<img style="margin-right:20px;width:120px;border-radius: 50%;" 
+					<img class="avatar-programa" 
 						 src="https://s3-eu-west-1.amazonaws.com/uabmedia/gallery_images/gallery_280_image_259_1718269037_large.jpg" 
 						 alt="Programes ARU"
 					>
 					<div>
-						<h1 class="titol-destacat mt-0" style="font-size: 2rem">Programes ARU</h1>
-						<a href="https://uab.media/uabradio" style="text-decoration: none;">
-							<i class="fa fa-calendar" style="font-size: 2em;"></i> 
+						<h1 class="titol-destacat mt-0 titol-detall">Programes ARU</h1>
+						<a href="https://uab.media/uabradio" class="text-decoration-none">
+							<i class="fa fa-calendar icona-calendari"></i> 
 						</a>
 						<span>Els informatius i els programes de l'Associació de Ràdios Universitàries a UABmèdia</span>
 					</div>
