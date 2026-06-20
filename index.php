@@ -272,18 +272,18 @@ $dadesClipsRecents = json_decode($respostaClipsRecents);
 					$b = $dadesNoticies->list[0]->date ?? 0;
 					if ($b >= $a):
 					?>
-					<a class="col-12 col-md-8 noticia-gran d-flex flex-column flex-md-row" href="/noticia/<?php echo $dadesNoticies->list['0']->id; ?>/<?php echo $dadesNoticies->list['0']->title_url; ?>">
-					<img class="imatge-destacada col-12 col-md-6 img-fluida"
+					<a class="col-12 col-md-8 noticia-gran" href="/noticia/<?php echo $dadesNoticies->list['0']->id; ?>/<?php echo $dadesNoticies->list['0']->title_url; ?>">
+					<img class="imatge-destacada"
 						 src="<?php echo $dadesNoticies->list['0']->img_social; ?>"
 						>
-					<div class="contingut-noticia col-12 col-md-6">
+					<div class="contingut-noticia">
 						<h3 class="titol"><?php echo $dadesNoticies->list['0']->title; ?></h3>
 						<p class="subtitol"><?php echo $dadesNoticies->list['0']->description_seo; ?></p>
 						<p class="data"><?php echo substr($dadesNoticies->list['0']->date_formatted, 0, -9); ?></p>
 					</div>
 					</a>
 					<?php else: ?>
-					<a class="col-12 col-md noticia-gran noticia-gran-alta" href="/noticia/<?php echo $dadesClips->list['0']->id; ?>/<?php echo $dadesClips->list['0']->title_url; ?>">
+					<a class="col-12 col-md-8 noticia-gran" href="/noticia/<?php echo $dadesClips->list['0']->id; ?>/<?php echo $dadesClips->list['0']->title_url; ?>">
 						<img class="imatge-destacada" src="<?php echo $dadesClips->list['0']->img_social; ?>">
 						<div class="contingut-noticia">
 							<h3 class="titol"><?php echo $dadesClips->list['0']->title; ?></h3>

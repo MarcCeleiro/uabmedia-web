@@ -14,7 +14,8 @@
 .contingut-noticia {
 	background-color: #222;
 	padding: 28px;
-	border-radius: var(--um-radius, 12px);
+	/* L'arrodoniment el posa la targeta (.noticia-gran/.noticia-petita) amb
+	   overflow:hidden, així els cantons interiors queden a ras. */
 }
 
 .carousel-item:before, .carousel-inner {
@@ -331,18 +332,9 @@ img.graella-imatge {
 	margin: 14px 0 20px;
 }
 
-/* Bloc de benvinguda de la portada + targeta destacada */
+/* Bloc de benvinguda de la portada */
 .titol-benvinguda {
 	font-size: 1.4em;
-}
-
-.img-fluida {
-	max-width: 100%;
-	height: auto;
-}
-
-.noticia-gran-alta {
-	min-height: 600px;
 }
 
 /* Contenidor de vídeo de JWPlayer (noticia.php) */
@@ -688,17 +680,41 @@ header .navbar ul li:last-child {
 
 /* Fi Seccions */
 
-/* Notícia gran */
+/* Notícia gran (format horitzontal: imatge ~70% a l'esquerra + caixa ~30% a la dreta) */
 
-.noticia-gran a {
-	margin-bottom: 60px!important;
+.noticia-gran {
+	display: flex;
+	flex-direction: column;            /* mòbil: imatge a dalt, caixa a baix */
+	overflow: hidden;                  /* retalla els cantons exteriors segons el border-radius */
+	border-radius: var(--um-radius, 12px);
+	margin-bottom: 24px;
 }
 
 .noticia-gran .imatge-destacada {
-	height: 300px;
 	width: 100%;
+	height: 220px;
 	object-fit: cover;
-	border-radius: var(--um-radius, 12px);
+}
+
+.noticia-gran .contingut-noticia {
+	flex: 1 1 auto;
+}
+
+@media (min-width: 768px) {
+	.noticia-gran {
+		flex-direction: row;           /* escriptori: imatge esquerra, caixa dreta */
+		min-height: 320px;
+	}
+	.noticia-gran .imatge-destacada {
+		flex: 0 0 70%;
+		width: 70%;
+		height: auto;                  /* s'estira a l'alçada de la caixa (align-items:stretch) */
+		align-self: stretch;
+	}
+	.noticia-gran .contingut-noticia {
+		flex: 0 0 30%;
+		width: 30%;
+	}
 }
 
 .noticia-gran .titol {
@@ -720,10 +736,15 @@ header .navbar ul li:last-child {
 	line-height: 1.2;
 }
 
-/* Notícia petita */
+/* Notícia petita (format vertical: imatge a dalt + caixa a baix) */
 
 .noticia-petita {
-	display: block;
+	display: flex;
+	flex-direction: column;            /* imatge a dalt + caixa que creix -> graella uniforme
+	                                      (l'<a> és la columna; align-items:stretch de .row la
+	                                      iguala a la més alta de la fila i la caixa omple la resta) */
+	overflow: hidden;                  /* retalla els cantons exteriors segons el border-radius */
+	border-radius: var(--um-radius, 12px);
 	margin-bottom: 24px;
 }
 
@@ -731,10 +752,10 @@ header .navbar ul li:last-child {
 	height: 200px;
 	width: 100%;
 	object-fit: cover;
-	border-radius: var(--um-radius, 12px);
 }
 
 .noticia-petita .contingut-noticia {
+	flex: 1 1 auto;                    /* la caixa creix per igualar l'alçada de la fila */
 	min-height: 120px;
 }
 
