@@ -6,6 +6,9 @@ $GET_VARS2 = array(
 );
 $REQUEST_URL = $API_URL . "?" . http_build_query($GET_VARS) . "&" . http_build_query($GET_VARS2);
 
+// "do=get" identifies the clip via the query string (iq); no POST body needed.
+$POST_VARS = array();
+
 $ch = curl_init();
 curl_setopt($ch, CURLOPT_URL, $REQUEST_URL);
 curl_setopt($ch, CURLOPT_POST, true);
@@ -96,7 +99,10 @@ $data = json_decode($response);
                                     "iq"        => $data->categories['0']->id
                                 );
                                 $REQUEST_URL_usuari = $API_URL."?".http_build_query($GET_VARS)."&".http_build_query($GET_VARS_usuari);
-                                
+
+                                // "do=get" identifies the category via the query string (iq); no POST body needed.
+                                $POST_VARS_usuari = array();
+
                                 $ch_usuari = curl_init();
                                 curl_setopt($ch_usuari, CURLOPT_URL, $REQUEST_URL_usuari);
                                 curl_setopt($ch_usuari, CURLOPT_POST, true);
@@ -126,9 +132,13 @@ $data = json_decode($response);
 				"do"        => "list"
 			);
 
+			// Prefer the secondary category for related content, but fall back to
+			// the primary one when a clip only has a single category (avoids
+			// "Undefined array key 1" / null property reads).
+			$relatedCategory = $data->categories[1]->id ?? ($data->categories[0]->id ?? null);
 			$POST_VARS3 = array(
 				"sortByFilter"          => "date",
-				"categoriesFilter"      => $data->categories['1']->id
+				"categoriesFilter"      => $relatedCategory
 			);
 
 			$REQUEST_URL3 = $API_URL . "?" . http_build_query($GET_VARS) . "&" . http_build_query($GET_VARS3);
