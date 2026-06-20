@@ -137,12 +137,12 @@
  }
 
  .btn {
-     border-radius: 8px;
+     border-radius: var(--um-radius-sm, 8px);
      padding: 9px 30px;
      position: relative;
      display: inline-block;
-     -webkit-border-radius: 8px;
-     -moz-border-radius: 8px;
+     -webkit-border-radius: var(--um-radius-sm, 8px);
+     -moz-border-radius: var(--um-radius-sm, 8px);
      cursor: pointer;
      z-index: 4;
  }
@@ -158,11 +158,11 @@
      transform: perspective(1px) translateZ(0);
      box-shadow: 0 0 1px rgba(0, 0, 0, 0);
      position: relative;
-     border-radius: 5px;
+     border-radius: var(--um-radius-sm, 8px);
  }
 
  .btn-hover:before {
-     border-radius: 4px;
+     border-radius: var(--um-radius-sm, 8px);
      content: "";
      position: absolute;
      z-index: -1;

@@ -7,7 +7,7 @@
     color: #000 !important;
     background-color: #ffe8e0 !important;
     padding: 10px 25px;
-    border-radius: 12px;
+    border-radius: var(--um-radius, 12px);
     width: 100%;
 	max-width: 700px;
     margin: 0 auto;
@@ -25,7 +25,7 @@
     width: 60px;
     height: 60px;
     margin-right: 20px;
-    border-radius: 12px;
+    border-radius: var(--um-radius, 12px);
     display: inline-block;
 }
 
