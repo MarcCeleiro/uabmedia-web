@@ -2,7 +2,8 @@
 include(dirname(__DIR__).'/config.php');
 $GET_VARS2 = array(
 "go"        => "categories",
-"do"        => "get"
+"do"        => "get",
+	"iq"        => 33
 );
 
 $POST_VARS = array(
@@ -149,7 +150,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 							</div>-->
 							<!--<section id="noticies">
 				<?php
-				include 'config.php';
+				include(dirname(__DIR__).'/config.php');
 				$GET_VARS_NEWS = array(
 					"go"        => "news",
 					"do"        => "list"
@@ -200,7 +201,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 				</div>
 			</section>-->
 							<?php
-							include 'config.php';
+							include(dirname(__DIR__).'/config.php');
 							$GET_VARS3 = array(
 								"go"        => "clips",
 								"do"        => "list"
@@ -241,7 +242,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 							
                  <section>
  <?php
- include 'config.php';
+ include(dirname(__DIR__).'/config.php');
  $GET_VARS_uab = array(
    "go" => "news",
    "do" => "list"

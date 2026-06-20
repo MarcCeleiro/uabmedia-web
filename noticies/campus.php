@@ -2,7 +2,8 @@
 include(dirname(__DIR__).'/config.php');
 $GET_VARS2 = array(
 	"go"        => "categories",
-	"do"        => "get"
+	"do"        => "get",
+	"iq"        => 22
 );
 
 $POST_VARS = array(
@@ -152,7 +153,7 @@ $data = json_decode($response);
 				</div>
 				<section>
 					<?php
-					include 'config.php';
+					include(dirname(__DIR__).'/config.php');
 
 					$GET_VARS_uab = array(
 						"go" => "news",
