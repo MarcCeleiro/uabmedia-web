@@ -33,7 +33,6 @@
 		<link rel="stylesheet" href="/assets/css/directes.css" />
 		<link rel="stylesheet" href="/assets/css/typography.css" />
 		<link rel="stylesheet" href="/assets/css/responsive.css" />
-		<link rel="stylesheet" href="/assets/css/footerStyles.css">
 
 		<script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
 
