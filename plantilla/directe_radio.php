@@ -71,7 +71,7 @@ echo "<script>const detallsPrograma = " . json_encode($detalls_programa) . ";</s
 ?>
 
 <!-- Afegir el script de Hls.js -->
-<script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+<script src="https://cdn.jsdelivr.net/npm/hls.js@1.6.16"></script>
 
 <div id="live-player">
 	<div class="container">

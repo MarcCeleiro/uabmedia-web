@@ -56,7 +56,7 @@ $data = json_decode($response);
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://s3-eu-west-1.amazonaws.com">
 		<link rel="shortcut icon" href="https://uab.media/assets/images/favicon.png" />
-		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+		<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.min.css" rel="stylesheet">
 		<link rel="stylesheet" href="https://uab.media/assets/css/bootstrap.min.css" />
 		<link rel="stylesheet" href="https://uab.media/assets/css/typography.css">
 		<link rel="stylesheet" href="https://uab.media/assets/css/style.css" />
@@ -217,7 +217,7 @@ $data = json_decode($response);
 include('../plantilla/footer.php');
 		//include(dirname(__DIR__).'/plantilla/footer.php');
 ?>
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.min.js"></script>
 <script>
 	AOS.init({
 		duration: 500

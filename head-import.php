@@ -10,9 +10,9 @@
 		<link rel="apple-touch-icon" sizes="152x152" href="./assets/images/icons/apple-touch-icon-152x152.png" />
 		<link rel="apple-touch-icon" sizes="180x180" href="./assets/images/icons/apple-touch-icon-180x180.png" />
 
-		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" media="print" onload="this.media='all'">
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" media="print" onload="this.media='all'">
 		<noscript>
-			<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+			<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
 		</noscript>
 
 		<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.min.css" rel="stylesheet" media="print" onload="this.media='all'">
